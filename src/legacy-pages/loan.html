@@ -1,0 +1,358 @@
+
+<html lang="en">
+  <head>
+    <title id="loan-seo-title">Personal &amp; Business Loan Options | Junior Lee</title>
+    <meta name="description" content="Compare Junior Lee personal and business loan information, required documents, 8%–12% APR, and 6–60 month repayment options.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800,900|Plus+Jakarta+Sans:400,500,600,700,800,900&amp;subset=latin">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/junior-lee-favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script>
+  </head>
+  <body class="antialiased font-body bg-body text-body">
+
+
+      <section x-data="{ mobileNavOpen: false }">
+        <nav class="py-6 border-b">
+          <div class="container mx-auto px-4">
+            <div class="relative flex items-center justify-between"><a class="inline-block" href="index.html"><img class="h-8 w-auto brightness-0" src="/brand/junior-lee-logo.png" alt="Junior Lee" id="site-header-logo"></a>
+              <ul class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex">
+                <li class="mr-8"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="about_us.html" id="site-header-nav-about-us">About Us</a></li>
+                <li class="mr-8"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="loan.html" id="site-header-nav-loan">Loan</a></li>
+                <li class="mr-8"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="how_to_apply.html" id="site-header-nav-how-to-apply">How to Apply</a></li>
+                <li><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="contact.html" id="site-header-nav-contact-us">Contact Us</a></li>
+              </ul>
+              <div class="flex items-center justify-end">
+                <div class="order-2 inline-flex rounded-lg border border-gray-200 bg-gray-50 p-1" x-data="{ language: localStorage.getItem('metro-language') || 'EN' }" role="group" aria-label="Select language">
+                  <button type="button" class="rounded-md px-3 py-1.5 text-sm font-semibold transition duration-200 focus:outline-none focus:ring-2 focus:ring-lime-500" :class="language === 'EN' ? 'bg-teal-900 text-white shadow-sm' : 'text-gray-600 hover:text-teal-900'" :aria-pressed="language === 'EN'" x-on:click="language = 'EN'; localStorage.setItem('metro-language', language)">EN</button>
+                  <button type="button" class="rounded-md px-3 py-1.5 text-sm font-semibold transition duration-200 focus:outline-none focus:ring-2 focus:ring-lime-500" :class="language === 'BM' ? 'bg-teal-900 text-white shadow-sm' : 'text-gray-600 hover:text-teal-900'" :aria-pressed="language === 'BM'" x-on:click="language = 'BM'; localStorage.setItem('metro-language', language)">BM</button>
+                </div>
+                <div class="order-1 mr-3 hidden md:block"><a class="inline-flex group py-2.5 px-4 items-center justify-center text-base font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" href="contact.html" id="site-header-apply-now-label"><span class="mr-2">Apply Now</span>                    <span class="transform group-hover:translate-x-0.5 transition-transform duration-200">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                        <path d="M4.75 10H15.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M10 4.75L15.25 10L10 15.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></span></a></div>
+                <button class="md:hidden text-teal-900 hover:text-teal-800" x-on:click="mobileNavOpen = !mobileNavOpen">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                    <path d="M5.19995 23.2H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.19995 16H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.19995 8.79999H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="relative">
+          <div class="container mx-auto px-4">
+            <div class="max-w-lg xl:max-w-xl mx-auto lg:mx-0 pt-12 pb-28 lg:py-24">
+              <div class="mb-6" id="loan-hero-eyebrow">
+                <span class="text-base font-medium">Junior Lee</span>
+              </div>
+              <h1 class="font-heading text-5xl xs:text-7xl xl:text-8xl tracking-tight mb-8" id="loan-hero-main-heading">Personal &amp; Business Loan Options</h1>
+              <p class="max-w-md xl:max-w-none text-lg text-gray-700 mb-10" id="loan-hero-description">Choose between personal loan and business loan options, review the required documents, and contact Junior Lee for application support.</p>
+              <div class="flex flex-col sm:flex-row"><a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-black hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" href="contact.html" id="loan-hero-primary-button-label">Contact Us</a></div>
+            </div>
+          </div>
+          <div class="hidden lg:flex items-center justify-center absolute top-0 right-0 h-full max-w-lg xl:max-w-none xl:w-2/5 p-3 ml-auto"><img class="block xl:h-full mx-auto rounded-full object-cover" src="flow-assets/metro/loan-hero-adviser.webp" alt="Borrower discussing loan options with an adviser" id="loan-hero-image"></div>
+          <div class="relative flex lg:hidden p-3 items-center justify-center"><img class="block w-full max-w-2xl h-auto rounded-full object-cover" src="flow-assets/metro/loan-hero-adviser.webp" alt="Borrower discussing loan options with an adviser"></div>
+        </div>
+        <div class="hidden fixed top-0 left-0 bottom-0 w-full xs:w-5/6 xs:max-w-md z-50" :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}">
+          <div class="fixed inset-0 bg-violet-900 opacity-20" x-on:click="mobileNavOpen = !mobileNavOpen"></div>
+          <nav class="relative flex flex-col py-7 px-10 w-full h-full bg-white overflow-y-auto">
+            <div class="flex items-center justify-between"><a class="inline-block" href="index.html"><img class="h-8 w-auto brightness-0" src="/brand/junior-lee-logo.png" alt="Junior Lee" id="site-header-mobile-drawer-primary-logo"></a>
+              <div class="flex items-center"><a class="inline-flex py-2 px-3 mr-2 items-center justify-center text-sm font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" href="contact.html" id="site-header-mobile-drawer-primary-apply-now-label">Apply Now</a>
+                <button x-on:click="mobileNavOpen = !mobileNavOpen">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                    <path d="M23.2 8.79999L8.80005 23.2M8.80005 8.79999L23.2 23.2" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="pt-20 pb-12 mb-auto">
+              <ul class="flex-col">
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="about_us.html" id="site-header-mobile-drawer-primary-nav-about-us">About Us</a></li>
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="loan.html" id="site-header-mobile-drawer-primary-nav-loan">Loan</a></li>
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="how_to_apply.html" id="site-header-mobile-drawer-primary-nav-how-to-apply">How to Apply</a></li>
+                <li><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="contact.html" id="site-header-mobile-drawer-primary-nav-contact-us">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section id="personal-loan" class="py-12 lg:py-24">
+        <div class="container mx-auto px-4">
+          <div class="loan-type-layout flex flex-wrap -mx-4">
+            <div class="loan-type-summary w-full lg:w-1/2 px-4 mb-10 lg:mb-0">
+              <div class="flex flex-col items-start max-w-md">
+                <h2 class="loan-type-heading font-heading text-4xl xs:text-6xl mb-6" id="loan-personal-heading">Personal Loan</h2>
+                <p class="text-lg text-gray-700 mb-4" id="loan-personal-description">A personal loan might be right for you if you want to fund a big expense or consolidate debt. This loan scheme provides loans to individuals with a source of income and comes with a monthly repayment plan to meet personal needs.</p>
+                <a class="inline-flex mb-8 text-base font-medium text-teal-900 underline decoration-orange-500 underline-offset-4 hover:text-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 rounded" href="#required-documents" id="loan-personal-documents-link-label">View required documents</a>
+                <div class="loan-type-actions flex flex-col sm:flex-row gap-3">
+                  <a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-black hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-300" href="/contact.html" id="loan-personal-apply-label">Apply Now</a>
+                  <a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-black hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-300" href="https://wa.me/60102150037?text=Hi%20Junior%20Lee%2C%20I%20would%20like%20to%20enquire%20about%20a%20loan%20appointment." id="loan-personal-whatsapp-label">Chat on WhatsApp</a>
+                </div>
+              </div>
+            </div>
+            <div class="loan-type-details w-full lg:w-1/2 px-4">
+              <div class="max-w-xl">
+                <div class="loan-type-feature flex flex-wrap sm:flex-nowrap mb-8 items-center">
+                  <img class="block w-44 h-44 object-cover rounded-2xl" src="flow-assets/metro/loan-personal-applicant.webp" alt="Applicant reviewing personal loan documents" id="loan-personal-feature-1-image">
+                  <div class="mt-6 sm:mt-0 sm:ml-8">
+                    <h3 class="text-2xl font-medium transition duration-200 mb-4" id="loan-personal-feature-1-title">Loan from RM500–RM100,000</h3>
+                    <p class="text-gray-600" id="loan-personal-feature-1-description">Minimum monthly salary of RM3,000 and a steady source of income.</p>
+                  </div>
+                </div>
+                <div class="loan-type-feature flex flex-wrap sm:flex-nowrap mb-8 items-center">
+                  <img class="block w-44 h-44 object-cover rounded-2xl" src="flow-assets/metro/loan-repayment-advice.webp" alt="Adviser explaining repayment information to an applicant" id="loan-personal-feature-2-image">
+                  <div class="mt-6 sm:mt-0 sm:ml-8">
+                    <h3 class="text-2xl font-medium transition duration-200 mb-4" id="loan-personal-feature-2-title">Monthly repayment plan</h3>
+                    <p class="text-gray-600" id="loan-personal-feature-2-description">A personal loan can also be defined as a short term loan and may be the answer to short-term cash needs because the repayment period is normally shorter than other types of loan such as housing loan or a mortgage.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="business-loan" class="py-12 lg:py-24">
+        <div class="container mx-auto px-4">
+          <div class="loan-type-layout flex flex-wrap -mx-4">
+            <div class="loan-type-summary w-full lg:w-1/2 px-4 mb-10 lg:mb-0">
+              <div class="flex flex-col items-start max-w-md">
+                <h2 class="loan-type-heading font-heading text-4xl xs:text-6xl mb-6" id="loan-business-heading">Business Loan</h2>
+                <p class="text-lg text-gray-700 mb-4" id="loan-business-description">Explore business loan support for working capital, stock purchases, overheads and other business activities.</p>
+                <a class="inline-flex mb-8 text-base font-medium text-teal-900 underline decoration-orange-500 underline-offset-4 hover:text-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 rounded" href="#required-documents" id="loan-business-documents-link-label">View required documents</a>
+                <div class="loan-type-actions flex flex-col sm:flex-row gap-3">
+                  <a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-black hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-300" href="/contact.html" id="loan-business-apply-label">Apply Now</a>
+                  <a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-black hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-300" href="https://wa.me/60102150037?text=Hi%20Junior%20Lee%2C%20I%20would%20like%20to%20enquire%20about%20a%20loan%20appointment." id="loan-business-whatsapp-label">Chat on WhatsApp</a>
+                </div>
+              </div>
+            </div>
+            <div class="loan-type-details w-full lg:w-1/2 px-4">
+              <div class="max-w-xl">
+                <div class="loan-type-feature flex flex-wrap sm:flex-nowrap mb-8 items-center">
+                  <img class="block w-44 h-44 object-cover rounded-2xl" src="flow-assets/metro/loan-business-retail.webp" alt="Retail business owner reviewing working capital documents" id="loan-business-feature-1-image">
+                  <div class="mt-6 sm:mt-0 sm:ml-8">
+                    <h3 class="text-2xl font-medium transition duration-200 mb-4" id="loan-business-feature-1-title">Working capital support</h3>
+                    <p class="text-gray-600" id="loan-business-feature-1-description">Funds may be used for purchasing stock, managing overheads and other business activities, to fulfil working capital needs.</p>
+                  </div>
+                </div>
+                <div class="loan-type-feature flex flex-wrap sm:flex-nowrap mb-8 items-center">
+                  <img class="block w-44 h-44 object-cover rounded-2xl" src="flow-assets/metro/loan-business-workshop.webp" alt="Service business owner discussing funding documents" id="loan-business-feature-2-image">
+                  <div class="mt-6 sm:mt-0 sm:ml-8">
+                    <h3 class="text-2xl font-medium transition duration-200 mb-4" id="loan-business-feature-2-title">Business funding information</h3>
+                    <p class="text-gray-600" id="loan-business-feature-2-description">Junior Lee offers services and solutions for small businesses and corporate groups with financing needs.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative py-12 lg:py-24 overflow-hidden"><img class="absolute top-0 right-0" src="flow-assets/pricing/waves-right-top.png" alt="">
+        <div class="container mx-auto px-4 relative">
+          <div class="max-w-2xl mx-auto text-center mb-12">
+            <h2 class="font-heading text-5xl sm:text-6xl tracking-xs mb-6" id="loan-comparison-heading">Loan Comparison</h2>
+            <p class="text-lg text-gray-700" id="loan-comparison-description">Compare personal and business loan options so you can choose the financing that fits your needs.</p>
+          </div>
+          <div class="loan-comparison-wrapper pb-4 overflow-x-auto" style="overflow-x: auto;">
+            <h3 class="font-heading text-3xl font-medium text-center mb-8" id="loan-comparison-table-heading">Compare loan types</h3>
+            <table class="loan-comparison-table w-full mx-auto" style="table-layout: fixed;">
+              <thead>
+                <tr>
+                  <th class="pr-4" style="width: 28%; min-width: 0;"></th>
+                  <th class="px-4" style="width: 36%; min-width: 0;">
+                    <div class="py-4 px-2 border border-orange-500 shadow-md rounded-2xl"><span class="block font-medium" id="loan-comparison-personal-title">Personal Loan</span>                      <span class="font-medium text-gray-700" id="loan-comparison-personal-subtitle">For individual needs</span></div>
+                  </th>
+                  <th class="pl-4" style="width: 36%; min-width: 0;">
+                    <div class="py-4 px-2 border border-orange-500 shadow-md rounded-2xl"><span class="block font-medium" id="loan-comparison-business-title">Business Loan</span>                      <span class="font-medium text-gray-700" id="loan-comparison-business-subtitle">For company growth</span></div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="py-6"><span class="text-xl font-medium" id="loan-comparison-loan-details-heading">Loan details</span></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-b">
+                    <div class="py-6"><span class="text-base" id="loan-comparison-row-1-label">Best for</span></div>
+                  </td>
+                  <td class="border-b">
+                    <div class="py-6 text-center"><span class="text-base" id="loan-comparison-row-1-personal">Big expenses, debt consolidation, major purchases, or short-term cash needs</span></div>
+                  </td>
+                  <td class="border-b">
+                    <div class="py-6 text-center"><span class="text-base" id="loan-comparison-row-1-business">Working capital, purchasing stock, managing overheads, or business activities</span></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-b">
+                    <div class="py-6"><span class="text-base" id="loan-comparison-row-2-label">Indicative rate</span></div>
+                  </td>
+                  <td class="border-b">
+                    <div class="py-6 text-center"><span class="text-base" id="loan-comparison-row-2-personal">8%–12% APR</span></div>
+                  </td>
+                  <td class="border-b">
+                    <div class="py-6 text-center"><span class="text-base" id="loan-comparison-row-2-business">8%–12% APR</span></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-b">
+                    <div class="py-6"><span class="text-base" id="loan-comparison-row-3-label">Loan amount</span></div>
+                  </td>
+                  <td class="border-b">
+                    <div class="py-6 text-center"><span class="text-base" id="loan-comparison-row-3-personal">RM500–RM100,000 for personal loan</span></div>
+                  </td>
+                  <td class="border-b">
+                    <div class="py-6 text-center"><span class="text-base" id="loan-comparison-row-3-business">Contact Us for business loan details</span></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="border-b">
+                    <div class="py-6"><span class="text-base" id="loan-comparison-row-4-label">Repayment tenure</span></div>
+                  </td>
+                  <td class="border-b">
+                    <div class="py-6 text-center"><span class="text-base" id="loan-comparison-row-4-personal">6–60 month repayment period</span></div>
+                  </td>
+                  <td class="border-b">
+                    <div class="py-6 text-center"><span class="text-base" id="loan-comparison-row-4-business">6–60 month repayment period</span></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="mt-5 text-sm text-gray-500 text-center">Published rate and repayment information is shown generally. Final loan terms are subject to document verification and confirmation.</p>
+          </div>
+          <div id="required-documents" class="mt-2 pt-6">
+            <div class="max-w-2xl mx-auto text-center mb-8">
+              <h2 class="font-heading text-3xl sm:text-4xl tracking-tight mb-3" id="loan-required-documents-heading">Required Documents</h2>
+              <p class="text-base text-gray-600" id="loan-required-documents-description">Prepare the relevant documents before submitting your loan enquiry.</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-6">
+              <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6 sm:p-7">
+                <h3 class="font-heading text-2xl tracking-tight text-teal-900 mb-4" id="loan-required-documents-personal-heading">Personal Loan Documents</h3>
+                <ul class="space-y-2.5 text-base leading-6 text-gray-700">
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-personal-requirement-1">NRIC and contact number</span></li>
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-personal-requirement-2">Latest 3 months' payslips</span></li>
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-personal-requirement-3">Latest 3 months' bank statements</span></li>
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-personal-requirement-4">Latest electricity bill</span></li>
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-personal-requirement-5">Latest water bill</span></li>
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-personal-requirement-6">Sale and Purchase Agreement, where applicable</span></li>
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-personal-requirement-7">Tenancy agreement, where applicable</span></li>
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-personal-requirement-8">Latest EPF statement</span></li>
+                </ul>
+              </div>
+              <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6 sm:p-7">
+                <h3 class="font-heading text-2xl tracking-tight text-teal-900 mb-4" id="loan-required-documents-business-heading">Business Loan Documents</h3>
+                <ul class="space-y-2.5 text-base leading-6 text-gray-700">
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-business-requirement-1">NRIC copy</span></li>
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-business-requirement-2">Name card</span></li>
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-business-requirement-3">Borang B</span></li>
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-business-requirement-4">Borang D</span></li>
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-business-requirement-5">Latest 3 months' bank statements</span></li>
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-business-requirement-6">Sale and Purchase Agreement, where applicable</span></li>
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-business-requirement-7">Utility bill</span></li>
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-business-requirement-8">Form 24/49</span></li>
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-business-requirement-9">Form 42</span></li>
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-business-requirement-10">Form 11A</span></li>
+                  <li class="flex items-start"><span class="mt-1.5 mr-3 inline-flex h-5 w-5 items-center justify-center rounded-full bg-lime-500 text-xs font-bold text-teal-900 flex-none">✓</span><span id="loan-business-requirement-11">Latest EPF statement</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mt-6 rounded-2xl border border-orange-400 bg-lime-50 px-6 py-6 sm:flex sm:items-center sm:justify-between sm:gap-6">
+              <div class="mb-5 sm:mb-0">
+                <h3 class="font-heading text-2xl tracking-tight text-teal-900 mb-2" id="loan-required-documents-cta-heading">Need help preparing your documents?</h3>
+                <p class="text-base text-gray-700" id="loan-required-documents-cta-description">Contact our team if you need help understanding the application requirements.</p>
+              </div>
+              <div class="flex flex-col xs:flex-row gap-3 flex-none">
+                <a class="inline-flex min-h-11 px-5 py-3 items-center justify-center text-base font-medium text-white bg-teal-900 hover:bg-lime-500 hover:text-teal-900 rounded-full transition duration-200 focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2" href="https://wa.me/60102150037?text=Hi%20Junior%20Lee%2C%20I%20would%20like%20to%20enquire%20about%20a%20loan%20appointment." target="_blank" rel="noopener">Chat on WhatsApp</a>
+                <a class="inline-flex min-h-11 px-5 py-3 items-center justify-center text-base font-medium text-teal-900 border border-teal-900 hover:bg-teal-900 hover:text-white rounded-full transition duration-200 focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2" href="contact.html">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="interest-rate" class="bg-white">
+        <div class="max-w-6xl mx-auto px-6 py-16">
+          <h2 class="text-3xl font-bold text-teal-900 mb-4 text-center" id="loan-interest-rates-heading">Interest Rate</h2>
+          <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12" id="loan-interest-rates-description">Indicative rate range information for Junior Lee loan enquiries.</p>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-gray-50 rounded-2xl p-8 shadow-sm border border-gray-100 text-center">
+              <div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center bg-lime-500 text-teal-900 rounded-full text-2xl font-bold">%</div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2" id="loan-interest-rates-feature-1-title">Indicative rate range</h3>
+              <p class="text-gray-600" id="loan-interest-rates-feature-1-description"><span class="font-semibold text-teal-900">8%–12% APR</span></p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-8 shadow-sm border border-gray-100 text-center">
+              <div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center bg-lime-500 text-teal-900 rounded-full text-2xl font-bold">RM</div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2" id="loan-interest-rates-feature-2-title">Repayment period</h3>
+              <p class="text-gray-600" id="loan-interest-rates-feature-2-description">6–60 month repayment period</p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-8 shadow-sm border border-gray-100 text-center">
+              <div class="w-14 h-14 mx-auto mb-4 flex items-center justify-center bg-lime-500 text-teal-900 rounded-full text-2xl font-bold">↻</div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2" id="loan-interest-rates-feature-3-title">Personal-loan amount</h3>
+              <p class="text-gray-600" id="loan-interest-rates-feature-3-description">RM500–RM100,000 personal-loan amount</p>
+            </div>
+          </div>
+          <div class="mt-12 bg-lime-50 rounded-2xl p-8 w-full">
+            <h3 class="text-xl font-semibold text-teal-900 mb-6 text-center" id="loan-interest-rates-example-heading">Representative example</h3>
+            <div class="mt-6 text-center">
+              <p class="text-gray-600" id="loan-interest-rates-amount-label">Amount borrowed</p>
+              <p class="text-3xl font-bold text-teal-900 mt-1" id="loan-interest-rates-amount-value">RM5,000</p>
+              <p class="text-sm text-gray-500 mt-2" id="loan-interest-rates-example-description">180-day period. Interest: RM448. Total payable: RM5,448.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+            <footer class="relative py-12 lg:py-24 overflow-hidden border-t border-gray-100" style="background-color: #fafafa;">
+        <img class="absolute bottom-0 left-0 w-[720px] max-w-none opacity-30 pointer-events-none" src="flow-assets/footer/waves-lines-left-bottom.png" alt="">
+        <div class="container px-4 mx-auto relative">
+          <div class="grid gap-y-10 md:grid-cols-2 lg:grid-cols-[1.7fr_0.8fr_1fr_1.35fr] lg:gap-x-16 xl:gap-x-24 mb-12 md:mb-24 xl:mb-40">
+            <div>
+              <a class="inline-flex items-center mb-5 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="index.html"><img class="h-8 lg:h-12 w-auto brightness-0" src="/brand/junior-lee-logo.png" alt="Junior Lee" id="site-footer-logo"></a>
+              <p class="text-base lg:text-lg leading-7 lg:leading-8 text-gray-600 max-w-md mb-4 lg:mb-8" id="site-footer-brand-description">Personal and business loan enquiries with clear information and direct assistance throughout the application process.</p>
+            </div>
+            <div>
+              <h3 class="text-base font-bold uppercase tracking-wide text-teal-900 mb-3 lg:mb-5" id="site-footer-quick-links-heading">Quick Links</h3>
+              <ul class="space-y-2 lg:space-y-4 text-base">
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="index.html" id="site-footer-link-home">Home</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html" id="site-footer-link-loan-options">Loan Options</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="how_to_apply.html" id="site-footer-link-how-to-apply">How to Apply</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="about_us.html" id="site-footer-link-about-us">About Us</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="contact.html" id="site-footer-link-contact-us">Contact Us</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-base font-bold uppercase tracking-wide text-teal-900 mb-3 lg:mb-5" id="site-footer-loan-information-heading">Loan Information</h3>
+              <ul class="space-y-2 lg:space-y-4 text-base">
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html#personal-loan" id="site-footer-link-personal-loan">Personal Loan</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html#business-loan" id="site-footer-link-business-loan">Business Loan</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html#required-documents" id="site-footer-link-required-documents">Required Documents</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html#interest-rate" id="site-footer-link-interest-repayment">Interest &amp; Repayment</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-base font-bold uppercase tracking-wide text-teal-900 mb-3 lg:mb-5" id="site-footer-contact-heading">Contact</h3>
+              <ul class="space-y-2 lg:space-y-4 text-base leading-7 text-gray-600">
+                <li class="flex flex-wrap items-center gap-x-2 gap-y-1"><span class="font-medium text-teal-900" id="site-footer-phone-label">Phone / WhatsApp:</span> <span class="inline-flex items-center gap-1.5 whitespace-nowrap"><a class="hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="tel:+60102150037" id="site-footer-phone-number">+60 10-215 0037</a><button type="button" class="inline-flex h-6 w-6 items-center justify-center rounded-full border border-gray-200 text-xs text-teal-900 hover:border-lime-500 hover:bg-lime-50 focus:outline-none focus:ring-2 focus:ring-lime-500" data-copy-value="+60 10-215 0037" aria-label="Copy phone number" title="Copy phone number">⧉</button></span></li>
+                <li><span class="font-medium text-teal-900" id="site-footer-email-label">Email:</span> <a class="break-all hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="mailto:metropinjamanberlesan@gmail.com" id="site-footer-email-address">metropinjamanberlesan@gmail.com</a></li>
+                <li><span class="font-medium text-teal-900" id="site-footer-office-label">Office:</span> <span id="site-footer-office-address">Jalan Metro 1, Metro Prima, 52100 Kuala Lumpur, Federal Territory of Kuala Lumpur</span></li>
+                <li><span class="font-medium text-teal-900" id="site-footer-hours-label">Hours:</span> <span id="site-footer-business-hours">Open 24 hours, 7 days a week</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:text-right">
+            <p class="text-base text-gray-500" id="site-footer-copyright">© 2026 Junior Lee. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    <script type="text/javascript" src="/js/1286481.js?v=1782722021" data-custom-component-id="1286481"></script>
+    <script type="text/javascript" src="/js/alfa-tracking.js?v=google-ads-only"></script>
+
+
+  </body>
+</html>

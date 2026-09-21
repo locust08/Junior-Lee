@@ -1,0 +1,241 @@
+
+<html lang="en">
+  <head>
+    <title id="home-seo-title">Junior Lee Malaysia | Personal &amp; Business Loan Enquiries</title>
+    <meta name="description" content="Junior Lee offers personal and business loan enquiries in Malaysia with rate range information, 6–60 month repayment options, and application support.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800,900|Plus+Jakarta+Sans:400,500,600,700,800,900&amp;subset=latin">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/junior-lee-favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script>
+  </head>
+  <body class="antialiased font-body bg-body text-body">
+
+
+      <section class="overflow-hidden" x-data="{ mobileNavOpen: false }">
+        <nav class="mx-4 py-6">
+          <div class="container mx-auto px-4">
+            <div class="relative flex items-center justify-between"><a class="inline-block" href="index.html"><img class="h-8 w-auto brightness-0" src="/brand/junior-lee-logo.png" alt="Junior Lee" id="site-header-logo"></a>
+              <ul class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex">
+                <li class="mr-8"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="about_us.html" id="site-header-nav-about-us">About Us</a></li>
+                <li class="mr-8"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="loan.html" id="site-header-nav-loan">Loan</a></li>
+                <li class="mr-8"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="how_to_apply.html" id="site-header-nav-how-to-apply">How to Apply</a></li>
+                <li><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="contact.html" id="site-header-nav-contact-us">Contact Us</a></li>
+              </ul>
+              <div class="flex items-center justify-end">
+                <div class="order-2 inline-flex rounded-lg border border-gray-200 bg-gray-50 p-1" x-data="{ language: localStorage.getItem('metro-language') || 'EN' }" role="group" aria-label="Select language">
+                  <button type="button" class="rounded-md px-3 py-1.5 text-sm font-semibold transition duration-200 focus:outline-none focus:ring-2 focus:ring-lime-500" :class="language === 'EN' ? 'bg-teal-900 text-white shadow-sm' : 'text-gray-600 hover:text-teal-900'" :aria-pressed="language === 'EN'" x-on:click="language = 'EN'; localStorage.setItem('metro-language', language)">EN</button>
+                  <button type="button" class="rounded-md px-3 py-1.5 text-sm font-semibold transition duration-200 focus:outline-none focus:ring-2 focus:ring-lime-500" :class="language === 'BM' ? 'bg-teal-900 text-white shadow-sm' : 'text-gray-600 hover:text-teal-900'" :aria-pressed="language === 'BM'" x-on:click="language = 'BM'; localStorage.setItem('metro-language', language)">BM</button>
+                </div>
+                <div class="order-1 mr-3 hidden md:block"><a class="inline-flex group py-2.5 px-4 items-center justify-center text-base font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" href="contact.html" id="site-header-apply-now-label"><span class="mr-2">Apply Now</span>                    <span class="transform group-hover:translate-x-0.5 transition-transform duration-200">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                        <path d="M4.75 10H15.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M10 4.75L15.25 10L10 15.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></span></a></div>
+                <button class="md:hidden text-teal-900 hover:text-teal-800" x-on:click="mobileNavOpen = !mobileNavOpen">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                    <path d="M5.19995 23.2H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.19995 16H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.19995 8.79999H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="hidden fixed top-0 left-0 bottom-0 w-full xs:w-5/6 xs:max-w-md z-50" :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}">
+          <div class="fixed inset-0 bg-violet-900 opacity-20" x-on:click="mobileNavOpen = !mobileNavOpen"></div>
+          <nav class="relative flex flex-col py-7 px-10 w-full h-full bg-white overflow-y-auto">
+            <div class="flex items-center justify-between"><a class="inline-block" href="index.html"><img class="h-8 w-auto brightness-0" src="/brand/junior-lee-logo.png" alt="Junior Lee" id="site-header-mobile-drawer-primary-logo"></a>
+              <div class="flex items-center"><a class="inline-flex py-2 px-3 mr-2 items-center justify-center text-sm font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" href="contact.html" id="site-header-mobile-drawer-primary-apply-now-label">Apply Now</a>
+                <button class="ml-6" x-on:click="mobileNavOpen = !mobileNavOpen">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                    <path d="M23.2 8.79999L8.80005 23.2M8.80005 8.79999L23.2 23.2" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="pt-20 pb-12 mb-auto">
+              <ul class="flex-col">
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="about_us.html" id="site-header-mobile-drawer-primary-nav-about-us">About Us</a></li>
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="loan.html" id="site-header-mobile-drawer-primary-nav-loan">Loan</a></li>
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="how_to_apply.html" id="site-header-mobile-drawer-primary-nav-how-to-apply">How to Apply</a></li>
+                <li><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="contact.html" id="site-header-mobile-drawer-primary-nav-contact-us">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section x-data="{ mobileNavOpen: false }">
+        <div class="relative pt-18"><img class="hidden md:block absolute top-0 left-0 mt-28 w-32 lg:w-64 xl:h-80 rounded-r-2xl object-cover" src="flow-assets/metro/home-hero-adviser.webp" alt="Adviser assisting a customer with a loan enquiry" id="home-hero-left-top-image"><img class="hidden md:block absolute top-0 right-0 mt-20 w-32 lg:w-64 xl:h-64 rounded-l-2xl object-cover" src="flow-assets/metro/home-personal-documents.webp" alt="Couple reviewing personal loan documents at home" id="home-hero-right-top-image">
+          <div class="container mx-auto px-4 relative">
+            <div class="max-w-lg xl:max-w-xl mx-auto mb-12 lg:mb-0 text-center">
+              <div class="mb-6 text-center" id="home-hero-eyebrow">
+                <span class="text-base font-medium">Junior Lee</span>
+              </div>
+              <h1 class="font-heading text-5xl xs:text-7xl xl:text-8xl tracking-tight mb-8" id="home-hero-main-heading">Pay Off Your Debts</h1>
+              <p class="text-lg text-gray-700 mb-10" id="home-hero-description">Are you paying more than 10% interest on your credit cards? Junior Lee provides loan information for credit card repayment, high interest debt, and major purchase enquiries. A repayment option designed to provide clear and manageable loan information.</p>
+              <div class="relative z-10 flex flex-col sm:flex-row justify-center"><a class="inline-flex py-4 px-6 mb-3 sm:mb-0 sm:mr-4 items-center justify-center text-lg font-medium text-white hover:text-teal-900 border border-teal-900 hover:border-lime-500 bg-teal-900 hover:bg-lime-500 rounded-full transition duration-200" href="contact.html" id="home-hero-primary-button-label">Apply Now</a>                <a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-black hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" href="loan.html" id="home-hero-secondary-button-label">View Loan Details</a></div>
+            </div>
+            <div class="flex -mx-4 mt-8 lg:mt-12 items-end relative">
+              <div class="w-1/3 xs:w-1/2 lg:w-auto px-4"><img class="block h-32 lg:h-48 rounded-t-2xl object-cover" src="flow-assets/metro/home-business-cafe.webp" alt="Small-business owner reviewing working capital documents" id="home-hero-bottom-left-image"></div>
+              <div class="w-2/3 xs:w-1/2 lg:w-auto ml-auto px-4"><img class="block w-1/2 md:w-64 ml-auto lg:w-64 xl:w-72 rounded-t-2xl object-cover" src="flow-assets/metro/required-documents-closeup.webp" alt="Organised loan application documents on a desk" id="home-hero-bottom-right-image"></div>
+              <div class="pointer-events-none absolute bottom-0 left-0 w-full py-32 bg-gradient-to-t from-white to-transparent"></div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden fixed top-0 left-0 bottom-0 w-full xs:w-5/6 xs:max-w-md z-50" :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}">
+          <div class="fixed inset-0 bg-violet-900 opacity-20" x-on:click="mobileNavOpen = !mobileNavOpen"></div>
+          <nav class="relative flex flex-col py-7 px-10 w-full h-full bg-white overflow-y-auto">
+            <div class="flex items-center justify-between"><a class="inline-block" href="index.html"><img class="h-8 w-auto brightness-0" src="/brand/junior-lee-logo.png" alt="Junior Lee" id="site-header-mobile-drawer-secondary-logo"></a>
+              <div class="flex items-center"><a class="inline-flex py-2.5 px-4 mr-6 items-center justify-center text-base font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" href="contact.html" id="site-header-mobile-drawer-secondary-apply-now-label">Apply Now</a>
+                <button x-on:click="mobileNavOpen = !mobileNavOpen">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                    <path d="M23.2 8.79999L8.80005 23.2M8.80005 8.79999L23.2 23.2" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="pt-20 pb-12 mb-auto">
+              <ul class="flex-col">
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="about_us.html" id="site-header-mobile-drawer-secondary-nav-about-us">About Us</a></li>
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="loan.html" id="site-header-mobile-drawer-secondary-nav-loan">Loan</a></li>
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="how_to_apply.html" id="site-header-mobile-drawer-secondary-nav-how-to-apply">How to Apply</a></li>
+                <li><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="contact.html" id="site-header-mobile-drawer-secondary-nav-contact-us">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <div data-from-ai="false">
+        <section class="py-16 lg:py-24 bg-white">
+          <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+            <h2 class="font-heading text-5xl xs:text-6xl tracking-tight mb-6 text-teal-900" id="home-how-it-works-heading">How It Works</h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto" id="home-how-it-works-description">Choose your loan, submit your application, and wait for the application review outcome.</p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div class="bg-teal-50 rounded-3xl p-8">
+                <div class="w-14 h-14 flex items-center justify-center bg-lime-500 text-teal-900 font-heading text-2xl font-bold rounded-full mx-auto mb-6">1</div>
+                <h3 class="font-heading text-2xl tracking-tight mb-3 text-teal-900" id="home-how-it-works-step-1-title">Select Your Loan and Apply</h3>
+                <p class="text-gray-600" id="home-how-it-works-step-1-description">Choose the loan that works for you and complete the application form.</p>
+              </div>
+              <div class="bg-teal-50 rounded-3xl p-8">
+                <div class="w-14 h-14 flex items-center justify-center bg-lime-500 text-teal-900 font-heading text-2xl font-bold rounded-full mx-auto mb-6">2</div>
+                <h3 class="font-heading text-2xl tracking-tight mb-3 text-teal-900" id="home-how-it-works-step-2-title">Application Review</h3>
+                <p class="text-gray-600" id="home-how-it-works-step-2-description">We will review your application details and contact you about the next step.</p>
+              </div>
+              <div class="bg-teal-50 rounded-3xl p-8">
+                <div class="w-14 h-14 flex items-center justify-center bg-lime-500 text-teal-900 font-heading text-2xl font-bold rounded-full mx-auto mb-6">3</div>
+                <h3 class="font-heading text-2xl tracking-tight mb-3 text-teal-900" id="home-how-it-works-step-3-title">Receive Funds After Approval</h3>
+                <p class="text-gray-600" id="home-how-it-works-step-3-description">If the application is accepted, funds may be disbursed after document verification and final confirmation.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-16 lg:py-24 bg-white">
+          <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-12">
+              <h2 class="font-heading text-5xl xs:text-6xl tracking-tight mb-6 text-teal-900" id="home-loan-options-heading">Loan Options</h2>
+              <p class="text-lg text-gray-600 max-w-2xl mx-auto" id="home-loan-options-description">Review the personal and business loan options available from Junior Lee.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8"><a class="group block rounded-3xl overflow-hidden shadow-lg border border-transparent transition duration-200 hover:-translate-y-1 hover:border-lime-500 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-lime-500" href="loan.html#personal-loan"><img class="w-full h-56 object-cover" src="flow-assets/metro/personal-loan-consultation.webp" alt="Customer discussing a personal loan application with an adviser" id="home-loan-option-1-image">
+                <div class="p-8">
+                  <h3 class="font-heading text-3xl tracking-tight mb-4 text-teal-900" id="home-loan-option-1-title">Personal Loan</h3>
+                  <p class="text-gray-600 mb-6" id="home-loan-option-1-description">A personal loan may help fund a big expense, consolidate debt, or meet short-term cash needs.</p><span class="inline-block underline text-black group-hover:text-lime-600" id="home-loan-option-1-link-label">View Loan Details</span>
+                </div></a><a class="group block rounded-3xl overflow-hidden shadow-lg border border-transparent transition duration-200 hover:-translate-y-1 hover:border-lime-500 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-lime-500" href="loan.html#business-loan"><img class="w-full h-56 object-cover" src="flow-assets/metro/business-financing-documents.webp" alt="Small-business owner reviewing financing documents" id="home-loan-option-2-image">
+                <div class="p-8">
+                  <h3 class="font-heading text-3xl tracking-tight mb-4 text-teal-900" id="home-loan-option-2-title">Business Loan</h3>
+                  <p class="text-gray-600 mb-6" id="home-loan-option-2-description">Business loan support for working capital, stock purchases, overheads, and business activities.</p><span class="inline-block underline text-black group-hover:text-lime-600" id="home-loan-option-2-link-label">View Loan Details</span>
+                </div></a></div>
+          </div>
+        </section>
+        <section class="py-16 lg:py-24 bg-white">
+          <div class="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center">
+            <div><img class="w-full rounded-3xl shadow-lg object-cover" src="flow-assets/metro/home-why-adviser-files.webp" alt="Adviser organising loan application files" id="home-why-choose-us-image"></div>
+            <div>
+              <h2 class="font-heading text-5xl xs:text-6xl tracking-tight mb-8 text-teal-900" id="home-why-choose-us-heading">Why Choose Us</h2>
+              <div class="space-y-6">
+                <div class="flex gap-4">
+                  <div class="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-lime-500 text-teal-900 font-heading text-xl font-bold rounded-full">✓</div>
+                  <div>
+                    <h3 class="font-heading text-2xl tracking-tight mb-2 text-teal-900" id="home-why-choose-us-feature-1-title">No ATM Card</h3>
+                    <p class="text-gray-600" id="home-why-choose-us-feature-1-description">We do not require any ATM card.</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-lime-500 text-teal-900 font-heading text-xl font-bold rounded-full">✓</div>
+                  <div>
+                    <h3 class="font-heading text-2xl tracking-tight mb-2 text-teal-900" id="home-why-choose-us-feature-2-title">Open to all Malaysians</h3>
+                    <p class="text-gray-600" id="home-why-choose-us-feature-2-description">Our service is open to all Malaysians.</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="w-12 h-12 flex-shrink-0 flex items-center justify-center bg-lime-500 text-teal-900 font-heading text-xl font-bold rounded-full">✓</div>
+                  <div>
+                    <h3 class="font-heading text-2xl tracking-tight mb-2 text-teal-900" id="home-why-choose-us-feature-3-title">No Guarantor</h3>
+                    <p class="text-gray-600" id="home-why-choose-us-feature-3-description">We do not require a guarantor from you for your loan application.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-20 bg-lime-500">
+          <div class="metro-cta-content max-w-4xl mx-auto px-6 text-center">
+            <h2 class="metro-balanced-cta-heading font-heading text-5xl xs:text-7xl tracking-tight mb-6 text-teal-900" id="home-ready-to-get-started-heading">Ready to get started?</h2>
+            <p class="text-lg text-teal-900 mb-10 opacity-80" id="home-ready-to-get-started-description">Apply Now or contact us on WhatsApp at +60 10-215 0037 for personal and business loan enquiries.</p>
+            <div class="flex flex-wrap gap-4 justify-center"><a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-white hover:text-teal-900 border border-teal-900 hover:border-white bg-teal-900 hover:bg-white rounded-full transition duration-200" href="contact.html" id="home-ready-to-get-started-apply-label">Apply Now</a>              <a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-teal-900 hover:text-white border border-teal-900 hover:border-teal-900 bg-white hover:bg-teal-900 rounded-full transition duration-200" href="https://wa.me/60102150037?text=Hi%20Junior%20Lee%2C%20I%20would%20like%20to%20enquire%20about%20a%20loan%20appointment." target="_blank" rel="noopener" id="home-ready-to-get-started-whatsapp-label">Chat on WhatsApp</a></div>
+          </div>
+        </section>
+      </div>
+            <footer class="relative py-12 lg:py-24 overflow-hidden border-t border-gray-100" style="background-color: #fafafa;">
+        <img class="absolute bottom-0 left-0 w-[720px] max-w-none opacity-30 pointer-events-none" src="flow-assets/footer/waves-lines-left-bottom.png" alt="">
+        <div class="container px-4 mx-auto relative">
+          <div class="grid gap-y-10 md:grid-cols-2 lg:grid-cols-[1.7fr_0.8fr_1fr_1.35fr] lg:gap-x-16 xl:gap-x-24 mb-12 md:mb-24 xl:mb-40">
+            <div>
+              <a class="inline-flex items-center mb-5 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="index.html"><img class="h-8 lg:h-12 w-auto brightness-0" src="/brand/junior-lee-logo.png" alt="Junior Lee" id="site-footer-logo"></a>
+              <p class="text-base lg:text-lg leading-7 lg:leading-8 text-gray-600 max-w-md mb-4 lg:mb-8" id="site-footer-brand-description">Personal and business loan enquiries with clear information and direct assistance throughout the application process.</p>
+            </div>
+            <div>
+              <h3 class="text-base font-bold uppercase tracking-wide text-teal-900 mb-3 lg:mb-5" id="site-footer-quick-links-heading">Quick Links</h3>
+              <ul class="space-y-2 lg:space-y-4 text-base">
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="index.html" id="site-footer-link-home">Home</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html" id="site-footer-link-loan-options">Loan Options</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="how_to_apply.html" id="site-footer-link-how-to-apply">How to Apply</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="about_us.html" id="site-footer-link-about-us">About Us</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="contact.html" id="site-footer-link-contact-us">Contact Us</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-base font-bold uppercase tracking-wide text-teal-900 mb-3 lg:mb-5" id="site-footer-loan-information-heading">Loan Information</h3>
+              <ul class="space-y-2 lg:space-y-4 text-base">
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html#personal-loan" id="site-footer-link-personal-loan">Personal Loan</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html#business-loan" id="site-footer-link-business-loan">Business Loan</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html#required-documents" id="site-footer-link-required-documents">Required Documents</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html#interest-rate" id="site-footer-link-interest-repayment">Interest &amp; Repayment</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-base font-bold uppercase tracking-wide text-teal-900 mb-3 lg:mb-5" id="site-footer-contact-heading">Contact</h3>
+              <ul class="space-y-2 lg:space-y-4 text-base leading-7 text-gray-600">
+                <li class="flex flex-wrap items-center gap-x-2 gap-y-1"><span class="font-medium text-teal-900" id="site-footer-phone-label">Phone / WhatsApp:</span> <span class="inline-flex items-center gap-1.5 whitespace-nowrap"><a class="hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="tel:+60102150037" id="site-footer-phone-number">+60 10-215 0037</a><button type="button" class="inline-flex h-6 w-6 items-center justify-center rounded-full border border-gray-200 text-xs text-teal-900 hover:border-lime-500 hover:bg-lime-50 focus:outline-none focus:ring-2 focus:ring-lime-500" data-copy-value="+60 10-215 0037" aria-label="Copy phone number" title="Copy phone number">⧉</button></span></li>
+                <li><span class="font-medium text-teal-900" id="site-footer-email-label">Email:</span> <a class="break-all hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="mailto:metropinjamanberlesan@gmail.com" id="site-footer-email-address">metropinjamanberlesan@gmail.com</a></li>
+                <li><span class="font-medium text-teal-900" id="site-footer-office-label">Office:</span> <span id="site-footer-office-address">Jalan Metro 1, Metro Prima, 52100 Kuala Lumpur, Federal Territory of Kuala Lumpur</span></li>
+                <li><span class="font-medium text-teal-900" id="site-footer-hours-label">Hours:</span> <span id="site-footer-business-hours">Open 24 hours, 7 days a week</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:text-right">
+            <p class="text-base text-gray-500" id="site-footer-copyright">© 2026 Junior Lee. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    <script type="text/javascript" src="/js/1286561.js?v=1782722020" data-custom-component-id="1286561"></script>
+    <script type="text/javascript" src="/js/alfa-tracking.js?v=google-ads-only"></script>
+
+
+  </body>
+</html>

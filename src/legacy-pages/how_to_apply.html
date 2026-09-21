@@ -1,0 +1,399 @@
+
+<html lang="en">
+  <head>
+    <title id="how-to-apply-seo-title">How to Apply for a Loan | Junior Lee</title>
+    <meta name="description" content="Apply with Junior Lee by selecting a loan, preparing documents, choosing a callback time or appointment slot, and submitting your enquiry.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800,900|Plus+Jakarta+Sans:400,500,600,700,800,900&amp;subset=latin">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/junior-lee-favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script>
+  </head>
+  <body class="antialiased font-body bg-body text-body">
+
+
+      <section x-data="{ mobileNavOpen: false }">
+        <nav class="py-6 border-b">
+          <div class="container mx-auto px-4">
+            <div class="relative flex items-center justify-between"><a class="inline-block" href="index.html"><img class="h-8 w-auto brightness-0" src="/brand/junior-lee-logo.png" alt="Junior Lee" id="site-header-logo"></a>
+              <ul class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex">
+                <li class="mr-8"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="about_us.html" id="site-header-nav-about-us">About Us</a></li>
+                <li class="mr-8"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="loan.html" id="site-header-nav-loan">Loan</a></li>
+                <li class="mr-8"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="how_to_apply.html" id="site-header-nav-how-to-apply">How to Apply</a></li>
+                <li><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="contact.html" id="site-header-nav-contact-us">Contact Us</a></li>
+              </ul>
+              <div class="flex items-center justify-end">
+                <div class="order-2 inline-flex rounded-lg border border-gray-200 bg-gray-50 p-1" x-data="{ language: localStorage.getItem('metro-language') || 'EN' }" role="group" aria-label="Select language">
+                  <button type="button" class="rounded-md px-3 py-1.5 text-sm font-semibold transition duration-200 focus:outline-none focus:ring-2 focus:ring-lime-500" :class="language === 'EN' ? 'bg-teal-900 text-white shadow-sm' : 'text-gray-600 hover:text-teal-900'" :aria-pressed="language === 'EN'" x-on:click="language = 'EN'; localStorage.setItem('metro-language', language)">EN</button>
+                  <button type="button" class="rounded-md px-3 py-1.5 text-sm font-semibold transition duration-200 focus:outline-none focus:ring-2 focus:ring-lime-500" :class="language === 'BM' ? 'bg-teal-900 text-white shadow-sm' : 'text-gray-600 hover:text-teal-900'" :aria-pressed="language === 'BM'" x-on:click="language = 'BM'; localStorage.setItem('metro-language', language)">BM</button>
+                </div>
+                <div class="order-1 mr-3 hidden md:block"><a class="inline-flex group py-2.5 px-4 items-center justify-center text-base font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" href="contact.html" id="site-header-apply-now-label"><span class="mr-2">Apply Now</span>                    <span class="transform group-hover:translate-x-0.5 transition-transform duration-200">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                        <path d="M4.75 10H15.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M10 4.75L15.25 10L10 15.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></span></a></div>
+                <button class="md:hidden text-teal-900 hover:text-teal-800" x-on:click="mobileNavOpen = !mobileNavOpen">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                    <path d="M5.19995 23.2H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.19995 16H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.19995 8.79999H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="relative pt-18 pb-24 sm:pb-32 lg:pt-36 lg:pb-62">
+          <div class="container mx-auto px-4 relative">
+            <div class="max-w-lg xl:max-w-xl mx-auto text-center">
+              <h1 class="font-heading text-5xl xs:text-7xl xl:text-8xl tracking-tight mb-8" id="how-to-apply-hero-main-heading">Submit Your Loan Enquiry in Simple Steps</h1>
+              <p class="max-w-md xl:max-w-none text-lg text-gray-700 mb-10" id="how-to-apply-hero-description">Choose the loan that works for you, fill in the form for your application, and our team will review your application and contact you about the next step.</p><a class="inline-flex py-4 px-6 mb-3 sm:mb-0 sm:mr-4 items-center justify-center text-lg font-medium text-white hover:text-teal-900 border border-teal-900 hover:border-lime-500 bg-teal-900 hover:bg-lime-500 rounded-full transition duration-200" href="contact.html" id="how-to-apply-hero-primary-button-label">Apply Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="hidden fixed top-0 left-0 bottom-0 w-full xs:w-5/6 xs:max-w-md z-50" :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}">
+          <div class="fixed inset-0 bg-violet-900 opacity-20" x-on:click="mobileNavOpen = !mobileNavOpen"></div>
+          <nav class="relative flex flex-col py-7 px-10 w-full h-full bg-white overflow-y-auto">
+            <div class="flex items-center justify-between"><a class="inline-block" href="index.html"><img class="h-8 w-auto brightness-0" src="/brand/junior-lee-logo.png" alt="Junior Lee" id="site-header-mobile-drawer-primary-logo"></a>
+              <div class="flex items-center"><a class="inline-flex py-2 px-3 mr-2 items-center justify-center text-sm font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" href="contact.html" id="site-header-mobile-drawer-primary-apply-now-label">Apply Now</a>
+                <button x-on:click="mobileNavOpen = !mobileNavOpen">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                    <path d="M23.2 8.79999L8.80005 23.2M8.80005 8.79999L23.2 23.2" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="pt-20 pb-12 mb-auto">
+              <ul class="flex-col">
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="about_us.html" id="site-header-mobile-drawer-primary-nav-about-us">About Us</a></li>
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="loan.html" id="site-header-mobile-drawer-primary-nav-loan">Loan</a></li>
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="how_to_apply.html" id="site-header-mobile-drawer-primary-nav-how-to-apply">How to Apply</a></li>
+                <li><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="contact.html" id="site-header-mobile-drawer-primary-nav-contact-us">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <div data-from-ai="false">
+        <section class="py-20 bg-white">
+          <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto text-center mb-16">
+              <h2 class="font-heading text-5xl xs:text-7xl tracking-tight mb-6" id="how-to-apply-steps-heading">Step-by-Step Process</h2>
+              <p class="text-lg text-gray-600" id="how-to-apply-steps-description">The application process is simple: select your loan, apply, wait for review, and receive the next-step update from Junior Lee.</p>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+              <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                <div class="h-full p-8 bg-gray-50 rounded-2xl border border-transparent hover:border-lime-500 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-center w-14 h-14 mb-6 text-2xl font-bold text-black bg-lime-500 rounded-full">1</div>
+                  <h3 class="font-heading text-2xl tracking-tight mb-3" id="how-to-apply-step-1-title">Select Your Loan and Apply</h3>
+                  <p class="text-gray-600" id="how-to-apply-step-1-description">Choose the loan that works for you and complete the application form.</p>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                <div class="h-full p-8 bg-gray-50 rounded-2xl border border-transparent hover:border-lime-500 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-center w-14 h-14 mb-6 text-2xl font-bold text-black bg-lime-500 rounded-full">2</div>
+                  <h3 class="font-heading text-2xl tracking-tight mb-3" id="how-to-apply-step-2-title">Application Review</h3>
+                  <p class="text-gray-600" id="how-to-apply-step-2-description">We will review your application details and contact you about the next step.</p>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                <div class="h-full p-8 bg-gray-50 rounded-2xl border border-transparent hover:border-lime-500 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition duration-200">
+                  <div class="flex items-center justify-center w-14 h-14 mb-6 text-2xl font-bold text-black bg-lime-500 rounded-full">3</div>
+                  <h3 class="font-heading text-2xl tracking-tight mb-3" id="how-to-apply-step-3-title">Receive Funds After Approval</h3>
+                  <p class="text-gray-600" id="how-to-apply-step-3-description">If the application is accepted, funds may be disbursed after document verification and final confirmation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="required-documents-section py-20 bg-gray-50">
+          <div class="container mx-auto px-4">
+            <div class="required-documents-layout flex flex-wrap -mx-4 items-center">
+              <div class="required-documents-media w-full lg:w-1/2 px-4 mb-12 lg:mb-0"><img class="block rounded-xl w-full object-cover" src="flow-assets/metro/how-apply-documents.webp" alt="Applicant preparing loan application documents" id="how-to-apply-required-documents-image"></div>
+              <div class="required-documents-content w-full lg:w-1/2 px-4">
+                <h2 class="font-heading text-5xl xs:text-7xl tracking-tight mb-6" id="how-to-apply-required-documents-heading">Required Documents</h2>
+                <p class="text-lg text-gray-600 mb-8" id="how-to-apply-required-documents-description">Prepare these documents before submitting your loan enquiry.</p>
+                <ul class="space-y-4">
+                  <li class="flex items-start p-4 bg-white rounded-xl shadow"><span class="flex flex-none items-center justify-center w-8 h-8 mr-4 text-sm font-bold text-black bg-lime-500 rounded-full" style="width: 2rem; height: 2rem; min-width: 2rem; min-height: 2rem; flex: 0 0 2rem;">✓</span>
+                    <div>
+                      <h3 class="font-heading text-xl tracking-tight mb-1" id="how-to-apply-document-1-title">NRIC / NRIC copy</h3>
+                      <p class="text-gray-600" id="how-to-apply-document-1-description">Required for personal loan and business loan applications.</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start p-4 bg-white rounded-xl shadow"><span class="flex flex-none items-center justify-center w-8 h-8 mr-4 text-sm font-bold text-black bg-lime-500 rounded-full" style="width: 2rem; height: 2rem; min-width: 2rem; min-height: 2rem; flex: 0 0 2rem;">✓</span>
+                    <div>
+                      <h3 class="font-heading text-xl tracking-tight mb-1" id="how-to-apply-document-2-title">Income and bank documents</h3>
+                      <p class="text-gray-600" id="how-to-apply-document-2-description">Latest 3 months payslip and latest 3 months bank statement for personal loan applications.</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start p-4 bg-white rounded-xl shadow"><span class="flex flex-none items-center justify-center w-8 h-8 mr-4 text-sm font-bold text-black bg-lime-500 rounded-full" style="width: 2rem; height: 2rem; min-width: 2rem; min-height: 2rem; flex: 0 0 2rem;">✓</span>
+                    <div>
+                      <h3 class="font-heading text-xl tracking-tight mb-1" id="how-to-apply-document-3-title">Utility and property documents</h3>
+                      <p class="text-gray-600" id="how-to-apply-document-3-description">Latest electric &amp; water bill, S&amp;P, tenancy agreement, and latest EPF statement where applicable.</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start p-4 bg-white rounded-xl shadow"><span class="flex flex-none items-center justify-center w-8 h-8 mr-4 text-sm font-bold text-black bg-lime-500 rounded-full" style="width: 2rem; height: 2rem; min-width: 2rem; min-height: 2rem; flex: 0 0 2rem;">✓</span>
+                    <div>
+                      <h3 class="font-heading text-xl tracking-tight mb-1" id="how-to-apply-document-4-title">Business documents</h3>
+                      <p class="text-gray-600" id="how-to-apply-document-4-description">Name card, Borang B &amp; D, Form 24/49, 42, 11A, and latest bank statement where applicable.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-20 bg-white">
+          <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto text-center mb-16">
+              <h2 class="font-heading text-5xl xs:text-7xl tracking-tight mb-6" id="how-to-apply-eligibility-heading">Application Notes</h2>
+              <p class="text-lg text-gray-600" id="how-to-apply-eligibility-description">Review these notes before you submit an enquiry.</p>
+            </div>
+            <div class="flex flex-wrap -mx-4 max-w-4xl mx-auto">
+              <div class="w-full md:w-1/2 px-4 mb-8">
+                <div class="flex items-center h-full p-6 bg-gray-50 rounded-xl"><span class="flex-shrink-0 flex items-center justify-center w-12 h-12 mr-4 text-lg font-bold text-black bg-lime-500 rounded-full">MY</span>
+                  <p class="text-lg font-medium" id="how-to-apply-eligibility-1">Our service is open to Malaysians.</p>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 px-4 mb-8">
+                <div class="flex items-center h-full p-6 bg-gray-50 rounded-xl"><span class="flex-shrink-0 flex items-center justify-center w-12 h-12 mr-4 text-lg font-bold text-black bg-lime-500 rounded-full">RM</span>
+                  <p class="text-lg font-medium" id="how-to-apply-eligibility-2">Personal loan applicants should have a source of income and a minimum monthly salary of RM3,000.</p>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 px-4 mb-8">
+                <div class="flex items-center h-full p-6 bg-gray-50 rounded-xl"><span class="flex-shrink-0 flex items-center justify-center w-12 h-12 mr-4 text-lg font-bold text-black bg-lime-500 rounded-full">★</span>
+                  <p class="text-lg font-medium" id="how-to-apply-eligibility-3">Prepare the required documents for the loan type you are applying for.</p>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 px-4 mb-8">
+                <div class="flex items-center h-full p-6 bg-gray-50 rounded-xl"><span class="flex-shrink-0 flex items-center justify-center w-12 h-12 mr-4 text-lg font-bold text-black bg-lime-500 rounded-full">✓</span>
+                  <p class="text-lg font-medium" id="how-to-apply-eligibility-4">No ATM card or guarantor is required for your loan application.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pt-20 pb-8 lg:pb-10 bg-gray-50" id="apply">
+          <div class="container mx-auto px-4">
+            <div class="flex flex-wrap -mx-4 items-center">
+              <div class="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
+                <h2 class="font-heading text-5xl xs:text-7xl tracking-tight mb-6" id="how-to-apply-ready-heading">Ready to Apply?</h2>
+                <p class="text-lg text-gray-600 mb-8" id="how-to-apply-ready-description">Submit your enquiry using the form below or chat with us on WhatsApp. You can also choose a preferred appointment slot for our team to follow up.</p><a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-white hover:text-teal-900 bg-green-500 hover:bg-lime-500 rounded-full transition duration-200 focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2" href="https://wa.me/60102150037?text=Hi%20Junior%20Lee%2C%20I%20would%20like%20to%20enquire%20about%20a%20loan%20appointment." id="how-to-apply-ready-whatsapp-label">Chat on WhatsApp</a>
+              </div>
+              <div class="w-full lg:w-1/2 px-4">
+                <form class="p-8 bg-white rounded-2xl shadow-xl" action="" x-data="contactBookingForm()" x-on:submit.prevent="submitBooking()">
+                      <label class="required-field-label block pl-4 mb-1 text-base font-medium" for="full-name">Full Name <span class="required-marker" aria-hidden="true">*</span></label>
+                      <input id="full-name" class="w-full px-4 py-3 mb-6 outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 shadow rounded-full" type="text" x-model="form.name">
+                      <label class="required-field-label block pl-4 mb-1 text-base font-medium" for="email">Email <span class="required-marker" aria-hidden="true">*</span></label>
+                      <input id="email" class="w-full px-4 py-3 mb-6 outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 shadow rounded-full" type="email" x-model="form.email">
+                      <div id="contact-phone-input"></div>
+                      <input id="contact-number" type="hidden" x-model="form.phone">
+                      <div id="contact-loan-type-select"></div>
+                      <input id="loan-type" type="hidden" x-model="form.loanType">
+                      <div id="contact-location-select"></div>
+                      <input id="location" type="hidden" x-model="form.location">
+                      <div id="contact-date-time-picker"></div>
+                      <input id="preferred-date" type="hidden" x-model="form.date">
+                      <input id="preferred-time" type="hidden" x-model="form.time">
+                      <label class="block pl-4 mb-1 text-base font-medium" for="message">Message / Enquiry</label>
+                      <textarea id="message" class="w-full px-4 py-3 mb-8 outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 shadow rounded-2xl resize-none" rows="4" x-model="form.message"></textarea>
+                      <button class="flex w-full py-4 px-6 items-center justify-center text-lg font-medium text-black hover:text-white border border-lime-500 hover:border-teal-900 bg-lime-500 hover:bg-teal-900 rounded-full transition duration-200 disabled:opacity-60" type="submit" :disabled="loading" id="how-to-apply-ready-submit-label"><span class="mr-2" x-text="loading ? 'Submitting...' : 'Apply Now'">Apply Now</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewbox="0 0 21 20" fill="none">
+                          <path d="M5.25 10H15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M10.5 4.75L15.75 10L10.5 15.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </button>
+                      <p class="mt-4 text-sm text-teal-900 text-center font-medium" x-show="successMessage" x-text="successMessage" style="display: none;"></p>
+                      <p class="mt-4 text-sm text-red-600 text-center font-medium" x-show="errorMessage" x-text="errorMessage" style="display: none;"></p>
+                    </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+            <footer class="relative py-12 lg:py-24 overflow-hidden border-t border-gray-100" style="background-color: #fafafa;">
+        <img class="absolute bottom-0 left-0 w-[720px] max-w-none opacity-30 pointer-events-none" src="flow-assets/footer/waves-lines-left-bottom.png" alt="">
+        <div class="container px-4 mx-auto relative">
+          <div class="grid gap-y-10 md:grid-cols-2 lg:grid-cols-[1.7fr_0.8fr_1fr_1.35fr] lg:gap-x-16 xl:gap-x-24 mb-12 md:mb-24 xl:mb-40">
+            <div>
+              <a class="inline-flex items-center mb-5 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="index.html"><img class="h-8 lg:h-12 w-auto brightness-0" src="/brand/junior-lee-logo.png" alt="Junior Lee" id="site-footer-logo"></a>
+              <p class="text-base lg:text-lg leading-7 lg:leading-8 text-gray-600 max-w-md mb-4 lg:mb-8" id="site-footer-brand-description">Personal and business loan enquiries with clear information and direct assistance throughout the application process.</p>
+            </div>
+            <div>
+              <h3 class="text-base font-bold uppercase tracking-wide text-teal-900 mb-3 lg:mb-5" id="site-footer-quick-links-heading">Quick Links</h3>
+              <ul class="space-y-2 lg:space-y-4 text-base">
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="index.html" id="site-footer-link-home">Home</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html" id="site-footer-link-loan-options">Loan Options</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="how_to_apply.html" id="site-footer-link-how-to-apply">How to Apply</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="about_us.html" id="site-footer-link-about-us">About Us</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="contact.html" id="site-footer-link-contact-us">Contact Us</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-base font-bold uppercase tracking-wide text-teal-900 mb-3 lg:mb-5" id="site-footer-loan-information-heading">Loan Information</h3>
+              <ul class="space-y-2 lg:space-y-4 text-base">
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html#personal-loan" id="site-footer-link-personal-loan">Personal Loan</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html#business-loan" id="site-footer-link-business-loan">Business Loan</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html#required-documents" id="site-footer-link-required-documents">Required Documents</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html#interest-rate" id="site-footer-link-interest-repayment">Interest &amp; Repayment</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-base font-bold uppercase tracking-wide text-teal-900 mb-3 lg:mb-5" id="site-footer-contact-heading">Contact</h3>
+              <ul class="space-y-2 lg:space-y-4 text-base leading-7 text-gray-600">
+                <li class="flex flex-wrap items-center gap-x-2 gap-y-1"><span class="font-medium text-teal-900" id="site-footer-phone-label">Phone / WhatsApp:</span> <span class="inline-flex items-center gap-1.5 whitespace-nowrap"><a class="hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="tel:+60102150037" id="site-footer-phone-number">+60 10-215 0037</a><button type="button" class="inline-flex h-6 w-6 items-center justify-center rounded-full border border-gray-200 text-xs text-teal-900 hover:border-lime-500 hover:bg-lime-50 focus:outline-none focus:ring-2 focus:ring-lime-500" data-copy-value="+60 10-215 0037" aria-label="Copy phone number" title="Copy phone number">⧉</button></span></li>
+                <li><span class="font-medium text-teal-900" id="site-footer-email-label">Email:</span> <a class="break-all hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="mailto:metropinjamanberlesan@gmail.com" id="site-footer-email-address">metropinjamanberlesan@gmail.com</a></li>
+                <li><span class="font-medium text-teal-900" id="site-footer-office-label">Office:</span> <span id="site-footer-office-address">Jalan Metro 1, Metro Prima, 52100 Kuala Lumpur, Federal Territory of Kuala Lumpur</span></li>
+                <li><span class="font-medium text-teal-900" id="site-footer-hours-label">Hours:</span> <span id="site-footer-business-hours">Open 24 hours, 7 days a week</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:text-right">
+            <p class="text-base text-gray-500" id="site-footer-copyright">© 2026 Junior Lee. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    <script>
+      function contactBookingForm() {
+          const today = new Date().toISOString().slice(0, 10);
+
+          return {
+              today,
+              loading: false,
+              successMessage: '',
+              errorMessage: '',
+              bookedTimes: [],
+              form: {
+                  name: '',
+                  email: '',
+                  phone: '',
+                  loanType: '',
+                  location: '',
+                  date: today,
+                  time: '',
+                  message: ''
+              },
+              init() {},
+              isBooked(time) {
+                  return this.bookedTimes.includes(time);
+              },
+              timeLabel(time, label) {
+                  return this.isBooked(time) ? `${label} - Booked` : label;
+              },
+              async loadBookedTimes() {
+                  if (!this.form.date) return;
+                  try {
+                      const response = await fetch(`/api/bookings/booked-slots?date=${encodeURIComponent(this.form.date)}`);
+                      if (!response.ok) return;
+                      const data = await response.json();
+                      this.bookedTimes = data.bookedTimes || [];
+                      if (this.isBooked(this.form.time)) {
+                          this.form.time = '';
+                      }
+                  } catch (error) {
+                      this.bookedTimes = [];
+                  }
+              },
+              validate() {
+                  if (!this.form.name.trim()) return 'Please enter your full name.';
+                  if (!this.form.email.trim()) return 'Please enter your email address.';
+                  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.form.email.trim())) return 'Please enter a valid email address.';
+                  if (!/^\+601\d{8,9}$/.test(this.form.phone.trim())) return 'Please enter a valid Malaysian contact number.';
+                  if (!this.form.loanType) return 'Please select a loan type.';
+                  if (!this.form.date || !this.form.time) return 'Please select your preferred date and time.';
+                  if (this.isBooked(this.form.time)) return 'This time slot has already been booked. Please choose another time.';
+                  return '';
+              },
+              async submitBooking() {
+                  if (this.loading) return;
+                  this.successMessage = '';
+                  this.errorMessage = this.validate();
+                  if (this.errorMessage) {
+                      if (window.alfaTrack) {
+                          window.alfaTrack('lead_form_error', {
+                              form_id: 'contact_booking',
+                              form_name: 'Contact appointment booking',
+                              error_type: 'validation',
+                              error_message: this.errorMessage
+                          });
+                      }
+                      return;
+                  }
+
+                  this.loading = true;
+                  try {
+                      const response = await fetch('/api/bookings', {
+                          method: 'POST',
+                          headers: { 'Content-Type': 'application/json' },
+                          body: JSON.stringify(this.form)
+                      });
+                      const data = await response.json().catch(() => ({}));
+
+                      if (response.status === 409) {
+                          this.errorMessage = '';
+                          this.form.time = '';
+                          window.dispatchEvent(new CustomEvent('alfa:booking-slot-unavailable'));
+                          await this.loadBookedTimes();
+                          return;
+                      }
+
+                      if (!response.ok) {
+                          this.errorMessage = data.message || 'This time slot is unavailable. Please choose another time.';
+                          if (window.alfaTrack) {
+                              window.alfaTrack('lead_form_error', {
+                                  form_id: 'contact_booking',
+                                  form_name: 'Contact appointment booking',
+                                  error_type: String(response.status),
+                                  error_message: this.errorMessage
+                              });
+                          }
+                          await this.loadBookedTimes();
+                          return;
+                      }
+
+                      this.successMessage = 'Thank you. Your preferred slot has been submitted.';
+                      this.errorMessage = '';
+                      if (window.alfaTrack) {
+                          window.alfaTrack('lead_form_submit', {
+                              form_id: 'contact_booking',
+                              form_name: 'Contact appointment booking',
+                              booking_id: data.booking?.id || '',
+                              loan_type: this.form.loanType
+                          });
+                      }
+                      this.form.name = '';
+                      this.form.email = '';
+                      this.form.phone = '';
+                      this.form.loanType = '';
+                      this.form.location = '';
+                      this.form.date = '';
+                      this.form.time = '';
+                      this.form.message = '';
+                      window.dispatchEvent(new CustomEvent('alfa:booking-form-reset'));
+                      await this.loadBookedTimes();
+                  } catch (error) {
+                      this.errorMessage = 'Booking service is currently unavailable. Please try again later.';
+                      if (window.alfaTrack) {
+                          window.alfaTrack('lead_form_error', {
+                              form_id: 'contact_booking',
+                              form_name: 'Contact appointment booking',
+                              error_type: 'network',
+                              error_message: this.errorMessage
+                          });
+                      }
+                  } finally {
+                      this.loading = false;
+                  }
+              }
+          };
+      }
+    </script>
+    <script type="text/javascript" src="/js/alfa-tracking.js?v=google-ads-only"></script>
+
+
+  </body>
+</html>

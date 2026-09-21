@@ -1,0 +1,15 @@
+{
+  "short_name": "Junior Lee",
+  "name": "Junior Lee",
+  "icons": [
+    {
+      "src": "/junior-lee-favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/en",
+  "display": "standalone",
+  "theme_color": "#0E6656",
+  "background_color": "#ffffff"
+}

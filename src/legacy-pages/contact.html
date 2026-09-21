@@ -1,0 +1,477 @@
+
+<html lang="en">
+  <head>
+    <title id="contact-seo-title">Contact Junior Lee | Loan Enquiries &amp; Appointments</title>
+    <meta name="description" content="Contact Junior Lee by WhatsApp, telephone, email, or appointment form for personal and business loan enquiries in Kuala Lumpur.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700,800,900|Plus+Jakarta+Sans:400,500,600,700,800,900&amp;subset=latin">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/junior-lee-favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script>
+  </head>
+  <body class="antialiased font-body bg-body text-body">
+
+
+      <section class="overflow-hidden" x-data="{ mobileNavOpen: false }">
+        <nav class="mx-4 py-6">
+          <div class="container mx-auto px-4">
+            <div class="relative flex items-center justify-between"><a class="inline-block" href="index.html"><img class="h-8 w-auto brightness-0" src="/brand/junior-lee-logo.png" alt="Junior Lee" id="site-header-logo"></a>
+              <ul class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex">
+                <li class="mr-8"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="about_us.html" id="site-header-nav-about-us">About Us</a></li>
+                <li class="mr-8"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="loan.html" id="site-header-nav-loan">Loan</a></li>
+                <li class="mr-8"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="how_to_apply.html" id="site-header-nav-how-to-apply">How to Apply</a></li>
+                <li><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="contact.html" id="site-header-nav-contact-us">Contact Us</a></li>
+              </ul>
+              <div class="flex items-center justify-end">
+                <div class="order-2 inline-flex rounded-lg border border-gray-200 bg-gray-50 p-1" x-data="{ language: localStorage.getItem('metro-language') || 'EN' }" role="group" aria-label="Select language">
+                  <button type="button" class="rounded-md px-3 py-1.5 text-sm font-semibold transition duration-200 focus:outline-none focus:ring-2 focus:ring-lime-500" :class="language === 'EN' ? 'bg-teal-900 text-white shadow-sm' : 'text-gray-600 hover:text-teal-900'" :aria-pressed="language === 'EN'" x-on:click="language = 'EN'; localStorage.setItem('metro-language', language)">EN</button>
+                  <button type="button" class="rounded-md px-3 py-1.5 text-sm font-semibold transition duration-200 focus:outline-none focus:ring-2 focus:ring-lime-500" :class="language === 'BM' ? 'bg-teal-900 text-white shadow-sm' : 'text-gray-600 hover:text-teal-900'" :aria-pressed="language === 'BM'" x-on:click="language = 'BM'; localStorage.setItem('metro-language', language)">BM</button>
+                </div>
+                <div class="order-1 mr-3 hidden md:block"><a class="inline-flex group py-2.5 px-4 items-center justify-center text-base font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" href="contact.html" id="site-header-apply-now-label"><span class="mr-2">Apply Now</span>                    <span class="transform group-hover:translate-x-0.5 transition-transform duration-200">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20" fill="none">
+                        <path d="M4.75 10H15.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M10 4.75L15.25 10L10 15.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></span></a></div>
+                <button class="md:hidden text-teal-900 hover:text-teal-800" x-on:click="mobileNavOpen = !mobileNavOpen">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                    <path d="M5.19995 23.2H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.19995 16H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.19995 8.79999H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="hidden fixed top-0 left-0 bottom-0 w-full xs:w-5/6 xs:max-w-md z-50" :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}">
+          <div class="fixed inset-0 bg-violet-900 opacity-20" x-on:click="mobileNavOpen = !mobileNavOpen"></div>
+          <nav class="relative flex flex-col py-7 px-10 w-full h-full bg-white overflow-y-auto">
+            <div class="flex items-center justify-between"><a class="inline-block" href="index.html"><img class="h-8 w-auto brightness-0" src="/brand/junior-lee-logo.png" alt="Junior Lee" id="site-header-mobile-drawer-primary-logo"></a>
+              <div class="flex items-center"><a class="inline-flex py-2 px-3 mr-2 items-center justify-center text-sm font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" href="contact.html" id="site-header-mobile-drawer-primary-apply-now-label">Apply Now</a>
+                <button class="ml-6" x-on:click="mobileNavOpen = !mobileNavOpen">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 32 32" fill="none">
+                    <path d="M23.2 8.79999L8.80005 23.2M8.80005 8.79999L23.2 23.2" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="pt-20 pb-12 mb-auto">
+              <ul class="flex-col">
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="about_us.html" id="site-header-mobile-drawer-primary-nav-about-us">About Us</a></li>
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="loan.html" id="site-header-mobile-drawer-primary-nav-loan">Loan</a></li>
+                <li class="mb-6"><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="how_to_apply.html" id="site-header-mobile-drawer-primary-nav-how-to-apply">How to Apply</a></li>
+                <li><a class="inline-block text-teal-900 hover:text-lime-500 font-medium" href="contact.html" id="site-header-mobile-drawer-primary-nav-contact-us">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section class="py-12 lg:py-24">
+        <div class="container mx-auto px-4">
+          <div class="border-t pt-16">
+            <div class="max-w-lg mx-auto lg:max-w-none">
+              <div class="flex flex-wrap -mx-4">
+                <div class="w-full lg:w-5/12 px-4 mb-12 lg:mb-0">
+                  <div class="max-w-lg py-7">
+                    <h1 class="font-heading text-4xl sm:text-6xl tracking-sm mb-6" id="contact-form-heading">Contact Us</h1>
+                    <p class="text-lg text-gray-700 text-justify mb-16" id="contact-form-description">Contact Junior Lee for personal and business loan information, application guidance and customer support. Our enquiry channels are available 24 hours, 7 days a week.</p>
+                    <form action="" x-data="contactBookingForm()" x-on:submit.prevent="submitBooking()">
+                      <label class="required-field-label block pl-4 mb-1 text-base font-medium" for="full-name">Full Name <span class="required-marker" aria-hidden="true">*</span></label>
+                      <input id="full-name" class="w-full px-4 py-3 mb-6 outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 shadow rounded-full" type="text" x-model="form.name">
+                      <label class="required-field-label block pl-4 mb-1 text-base font-medium" for="email">Email <span class="required-marker" aria-hidden="true">*</span></label>
+                      <input id="email" class="w-full px-4 py-3 mb-6 outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 shadow rounded-full" type="email" x-model="form.email">
+                      <div id="contact-phone-input"></div>
+                      <input id="contact-number" type="hidden" x-model="form.phone">
+                      <div id="contact-loan-type-select"></div>
+                      <input id="loan-type" type="hidden" x-model="form.loanType">
+                      <div id="contact-location-select"></div>
+                      <input id="location" type="hidden" x-model="form.location">
+                      <div id="contact-date-time-picker"></div>
+                      <input id="preferred-date" type="hidden" x-model="form.date">
+                      <input id="preferred-time" type="hidden" x-model="form.time">
+                      <label class="block pl-4 mb-1 text-base font-medium" for="message">Message / Enquiry</label>
+                      <textarea id="message" class="w-full px-4 py-3 mb-8 outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 shadow rounded-2xl resize-none" rows="4" x-model="form.message"></textarea>
+                      <button class="flex w-full py-3 px-5 items-center justify-center font-medium text-white hover:text-teal-900 border border-teal-900 hover:border-lime-500 bg-teal-900 hover:bg-lime-500 rounded-full transition duration-200 disabled:opacity-60" type="submit" :disabled="loading" id="contact-form-submit-label"><span class="mr-2" x-text="loading ? 'Submitting...' : 'Apply Now'">Apply Now</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewbox="0 0 21 20" fill="none">
+                          <path d="M5.25 10H15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M10.5 4.75L15.75 10L10.5 15.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </button>
+                      <p class="mt-4 text-sm text-teal-900 text-center font-medium" x-show="successMessage" x-text="successMessage" style="display: none;"></p>
+                      <p class="mt-4 text-sm text-red-600 text-center font-medium" x-show="errorMessage" x-text="errorMessage" style="display: none;"></p>
+                    </form>
+                  </div>
+                </div>
+                <div class="w-full lg:w-7/12 px-4">
+                  <div class="lg:ml-auto lg:max-w-3xl" style="max-width: 720px;"><img class="block w-full h-96 md:h-[520px] lg:h-[760px] xl:h-[820px] object-cover rounded-2xl" src="flow-assets/metro/contact-phone-support.webp" alt="Customer-service representative assisting by phone and online enquiry" id="contact-form-image"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-12 lg:py-24">
+        <div class="container mx-auto px-4">
+          <div class="max-w-lg mx-auto md:max-w-none">
+            <div class="flex flex-wrap -mx-4">
+              <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-10 md:mb-0"><a class="flex flex-col h-full" href="mailto:metropinjamanberlesan@gmail.com" style="color: inherit; text-decoration: none;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewbox="0 0 48 48" fill="none">
+                    <path d="M0 8C0 3.58172 3.58172 0 8 0H40C44.4183 0 48 3.58172 48 8V40C48 44.4183 44.4183 48 40 48H8C3.58172 48 0 44.4183 0 40V8Z" fill="#BEF264"></path>
+                    <path d="M11.5389 13.4152L24 23.6106L36.461 13.4152C36.3173 13.3623 36.162 13.3333 36 13.3333H12C11.8379 13.3333 11.6826 13.3623 11.5389 13.4152Z" fill="#022C22"></path>
+                    <path d="M10.6666 16.147V33.3333C10.6666 34.0697 11.2636 34.6667 12 34.6667H36C36.7363 34.6667 37.3333 34.0697 37.3333 33.3333V16.147L24.8443 26.3653C24.3531 26.7671 23.6468 26.7671 23.1556 26.3653L10.6666 16.147Z" fill="#022C22"></path>
+                  </svg><span class="block mt-8 mb-1 text-2xl font-medium" id="contact-method-email-heading">Email</span>
+                  <p class="text-gray-700" id="contact-method-email-description">Email us for loan enquiries and application support.</p>
+                  <p class="mt-4 text-lg font-medium break-all" id="site-contact-support-email">metropinjamanberlesan@gmail.com</p></a></div>
+              <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-10 md:mb-0">
+                <a class="flex flex-col h-full" href="tel:+60102150037" style="color: inherit; text-decoration: none;" x-data="{ copied: false }">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewbox="0 0 48 48" fill="none">
+                    <path d="M0 8C0 3.58172 3.58172 0 8 0H40C44.4183 0 48 3.58172 48 8V40C48 44.4183 44.4183 48 40 48H8C3.58172 48 0 44.4183 0 40V8Z" fill="#BEF264"></path>
+                    <path d="M13.3333 12C12.597 12 12 12.597 12 13.3333C12 25.8518 22.1482 36 34.6667 36C35.403 36 36 35.403 36 34.6667V28.2667C36 27.6779 35.6138 27.1588 35.0498 26.9896L29.7165 25.3896C29.2466 25.2486 28.7374 25.377 28.3905 25.7239L26.8288 27.2856C24.2738 25.847 22.153 23.7262 20.7144 21.1712L22.2761 19.6095C22.623 19.2626 22.7514 18.7534 22.6104 18.2835L21.0104 12.9502C20.8412 12.3862 20.3221 12 19.7333 12H13.3333Z" fill="#022C22"></path>
+                  </svg><span class="block mt-8 mb-1 text-2xl font-medium" id="contact-method-phone-heading">Phone</span>
+                  <p class="text-gray-700" id="contact-method-phone-description">Open 24 hours, 7 days a week</p>
+                  <div class="mt-4 flex items-center">
+                    <p class="text-lg font-medium" id="site-contact-phone-number">+60 10-215 0037</p>
+                    <button class="ml-3 inline-flex items-center justify-center text-teal-900 hover:text-lime-500 transition duration-200" type="button" aria-label="Copy phone number" x-on:click.stop.prevent="navigator.clipboard.writeText('+60 10-215 0037'); copied = true; setTimeout(() =&gt; copied = false, 2000)">
+                      <svg x-show="!copied" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none">
+                        <rect x="9" y="9" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></rect>
+                        <path d="M5 15H4C2.89543 15 2 14.1046 2 13V4C2 2.89543 2.89543 2 4 2H13C14.1046 2 15 2.89543 15 4V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <svg x-show="copied" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" style="display: none;">
+                        <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </a>
+              </div>
+              <div class="w-full sm:w-1/2 md:w-1/3 px-4">
+                <div class="flex flex-col h-full">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewbox="0 0 48 48" fill="none">
+                    <path d="M0 8C0 3.58172 3.58172 0 8 0H40C44.4183 0 48 3.58172 48 8V40C48 44.4183 44.4183 48 40 48H8C3.58172 48 0 44.4183 0 40V8Z" fill="#BEF264"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.7886 37.0751L24.7902 37.074L24.7926 37.0722L24.8 37.0667L24.8247 37.0483C24.8456 37.0328 24.875 37.0106 24.9126 36.9821C24.9876 36.9249 25.0948 36.8422 25.2297 36.7351C25.4994 36.5212 25.8803 36.2099 26.3353 35.8126C27.2435 35.0196 28.4568 33.876 29.6738 32.4735C32.0637 29.7193 34.6667 25.7403 34.6667 21.3333C34.6667 15.4423 29.8911 10.6667 24 10.6667C18.109 10.6667 13.3334 15.4423 13.3334 21.3333C13.3334 25.7403 15.9364 29.7193 18.3263 32.4735C19.5433 33.876 20.7566 35.0196 21.6648 35.8126C22.1198 36.2099 22.5007 36.5212 22.7704 36.7351C22.9053 36.8422 23.0125 36.9249 23.0875 36.9821C23.125 37.0106 23.1545 37.0328 23.1754 37.0483L23.2001 37.0667L23.2075 37.0722L23.2108 37.0746C23.6802 37.4189 24.3192 37.4194 24.7886 37.0751ZM23.9971 24.6667C25.8381 24.6667 27.3304 23.1743 27.3304 21.3333C27.3304 19.4924 25.8381 18 23.9971 18C22.1562 18 20.6638 19.4924 20.6638 21.3333C20.6638 23.1743 22.1562 24.6667 23.9971 24.6667Z" fill="#022C22"></path>
+                  </svg><span class="block mt-8 mb-1 text-2xl font-medium" id="contact-method-office-heading">HQ Office</span>
+                  <p class="text-gray-700 mb-auto" id="contact-method-office-description">Visit us at our office</p>
+                  <p class="mt-8 text-lg font-medium" id="site-contact-office-name">Junior Lee</p>
+                  <p class="text-lg font-medium" id="site-contact-office-address">Jalan Metro 1, Metro Prima, 52100 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>
+                  <div class="flex flex-wrap mt-6"><a class="inline-flex py-2.5 px-4 mr-3 mb-3 items-center justify-center text-sm font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" href="https://www.waze.com/live-map/directions/my/wilayah-persekutuan-kuala-lumpur/kuala-lumpur/jalan-metro-1?to=place.ElpKYWxhbiBNZXRybyAxLCBNZXRybyBQcmltYSwgNTIxMDAgS3VhbGEgTHVtcHVyLCBXaWxheWFoIFBlcnNla3V0dWFuIEt1YWxhIEx1bXB1ciwgTWFsYXlzaWEiLiosChQKEglr0ecfQEbMMRELOdpZeIzxyxIUChIJ35pfkUBGzDERuup-yz1DT3Y" target="_blank" rel="noopener" id="site-contact-waze-link"><img src="/icons/waze-icon.svg" alt="Waze" style="width: 16px; height: 16px;"></a><a class="inline-flex py-2.5 px-4 mb-3 items-center justify-center text-sm font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" href="https://www.google.com/maps/place/Jalan+Metro+1,+Metro+Prima,+52100+Kuala+Lumpur,+Wilayah+Persekutuan+Kuala+Lumpur/data=!4m2!3m1!1s0x31cc46401fe7d16b:0xcbf18c7859da390b?sa=X&amp;ved=1t:242&amp;ictx=111" target="_blank" rel="noopener" id="site-contact-google-maps-link"><img src="/icons/google-map-icon.svg" alt="Google Map" style="width: 16px; height: 16px;"></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-12 lg:py-24">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-20">
+            <h2 class="font-heading text-6xl mb-6" id="contact-faq-heading">FAQ</h2>
+            <p class="text-gray-700" id="contact-faq-description">Here you will find the answers to the frequently asked questions.</p>
+          </div>
+          <div class="max-w-4xl mx-auto">
+            <button class="flex w-full py-6 px-8 mb-4 items-start justify-between text-left shadow-md rounded-2xl" x-data="{ accordion: false }" x-on:click.prevent="accordion = !accordion">
+              <div>
+                <div class="pr-5">
+                  <h3 class="text-lg font-medium" id="contact-faq-1-question">What loan services do you offer?</h3>
+                </div>
+                <div class="overflow-hidden h-0 pr-5 duration-500" x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''">
+                  <p class="text-gray-700 mt-4" id="contact-faq-1-answer">Junior Lee provides information and enquiry support for personal and business loans.</p>
+                </div>
+              </div><span class="flex-shrink-0">
+                <div :class="{'hidden': accordion}">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <path d="M12 5.69995V18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="hidden" :class="{'hidden': !accordion}">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div></span>
+            </button>
+            <button class="flex w-full py-6 px-8 mb-4 items-start justify-between text-left shadow-md rounded-2xl" x-data="{ accordion: false }" x-on:click.prevent="accordion = !accordion">
+              <div>
+                <div class="pr-5">
+                  <h3 class="text-lg font-medium" id="contact-faq-2-question">How fast can I receive the money?</h3>
+                </div>
+                <div class="overflow-hidden h-0 pr-5 duration-500" x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''">
+                  <p class="text-gray-700 mt-4" id="contact-faq-2-answer">Processing and disbursement time may vary depending on document verification and final confirmation.</p>
+                </div>
+              </div><span class="flex-shrink-0">
+                <div :class="{'hidden': accordion}">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <path d="M12 5.69995V18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="hidden" :class="{'hidden': !accordion}">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div></span>
+            </button>
+            <button class="flex w-full py-6 px-8 mb-4 items-start justify-between text-left shadow-md rounded-2xl" x-data="{ accordion: false }" x-on:click.prevent="accordion = !accordion">
+              <div>
+                <div class="pr-5">
+                  <h3 class="text-lg font-medium" id="contact-faq-3-question">Who can apply?</h3>
+                </div>
+                <div class="overflow-hidden h-0 pr-5 duration-500" x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''">
+                  <p class="text-gray-700 mt-4" id="contact-faq-3-answer">The service is open to Malaysians. Personal loan applicants should have a source of income and a minimum monthly salary of RM3,000.</p>
+                </div>
+              </div><span class="flex-shrink-0">
+                <div :class="{'hidden': accordion}">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <path d="M12 5.69995V18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="hidden" :class="{'hidden': !accordion}">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div></span>
+            </button>
+            <button class="flex w-full py-6 px-8 mb-4 items-start justify-between text-left shadow-md rounded-2xl" x-data="{ accordion: false }" x-on:click.prevent="accordion = !accordion">
+              <div>
+                <div class="pr-5">
+                  <h3 class="text-lg font-medium" id="contact-faq-4-question">Do I need an ATM card or guarantor?</h3>
+                </div>
+                <div class="overflow-hidden h-0 pr-5 duration-500" x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''">
+                  <p class="text-gray-700 mt-4" id="contact-faq-4-answer">No. Junior Lee does not require your ATM card or a guarantor for your loan application.</p>
+                </div>
+              </div><span class="flex-shrink-0">
+                <div :class="{'hidden': accordion}">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <path d="M12 5.69995V18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="hidden" :class="{'hidden': !accordion}">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div></span>
+            </button>
+            <button class="flex w-full py-6 px-8 mb-24 items-start justify-between text-left shadow-md rounded-2xl" x-data="{ accordion: false }" x-on:click.prevent="accordion = !accordion">
+              <div>
+                <div class="pr-5">
+                  <h3 class="text-lg font-medium" id="contact-faq-5-question">What documents are required?</h3>
+                </div>
+                <div class="overflow-hidden h-0 pr-5 duration-500" x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''">
+                  <p class="text-gray-700 mt-4" id="contact-faq-5-answer">Document requirements differ between personal and business loan enquiries. Review the complete <a class="text-black font-medium underline" href="/loan.html#required-documents" x-on:click.stop onclick="event.stopPropagation(); window.location.href='/loan.html#required-documents';">Required Documents</a> section on the Loan Options page.</p>
+                </div>
+              </div><span class="flex-shrink-0">
+                <div :class="{'hidden': accordion}">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <path d="M12 5.69995V18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="hidden" :class="{'hidden': !accordion}">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none">
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div></span>
+            </button>
+            <div class="sm:flex py-10 px-5 sm:px-10 bg-orange-50 rounded-2xl">
+              <div class="mb-4 sm:mb-0 sm:mr-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewbox="0 0 48 48" fill="none">
+                  <path d="M0 8C0 3.58172 3.58172 0 8 0H40C44.4183 0 48 3.58172 48 8V40C48 44.4183 44.4183 48 40 48H8C3.58172 48 0 44.4183 0 40V8Z" fill="#BEF264"></path>
+                  <path d="M13.676 15.5617C11.7951 17.8602 10.6666 20.7983 10.6666 24C10.6666 27.2017 11.7951 30.1398 13.6761 32.4383L18.9201 27.1943C18.3372 26.2694 18 25.174 18 24C18 22.8259 18.3372 21.7306 18.92 20.8057L13.676 15.5617Z" fill="#022C22"></path>
+                  <path d="M15.5616 13.6761L20.8056 18.9201C21.7306 18.3372 22.8259 18 24 18C25.174 18 26.2694 18.3372 27.1943 18.9201L32.4383 13.6761C30.1398 11.7951 27.2017 10.6666 24 10.6666C20.7982 10.6666 17.8601 11.7951 15.5616 13.6761Z" fill="#022C22"></path>
+                  <path d="M34.3239 15.5617L29.0799 20.8057C29.6628 21.7307 30 22.8259 30 24C30 25.174 29.6627 26.2693 29.0799 27.1943L34.3238 32.4383C36.2048 30.1398 37.3333 27.2017 37.3333 24C37.3333 20.7983 36.2048 17.8602 34.3239 15.5617Z" fill="#022C22"></path>
+                  <path d="M32.4382 34.3239L27.1942 29.0799C26.2693 29.6628 25.174 30 24 30C22.8259 30 21.7307 29.6628 20.8057 29.0799L15.5617 34.3239C17.8602 36.2048 20.7983 37.3333 24 37.3333C27.2016 37.3333 30.1397 36.2048 32.4382 34.3239Z" fill="#022C22"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-medium mb-4" id="contact-still-have-questions-heading">Still have questions?</h3>
+                <p class="text-gray-700" id="contact-still-have-questions-description">Contact us using the form above or <a class="inline-block text-black font-medium underline" href="https://wa.me/60102150037?text=Hi%20Junior%20Lee%2C%20I%20would%20like%20to%20enquire%20about%20a%20loan%20appointment." target="_blank" rel="noopener">chat with us on WhatsApp</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+            <footer class="relative py-12 lg:py-24 overflow-hidden border-t border-gray-100" style="background-color: #fafafa;">
+        <img class="absolute bottom-0 left-0 w-[720px] max-w-none opacity-30 pointer-events-none" src="flow-assets/footer/waves-lines-left-bottom.png" alt="">
+        <div class="container px-4 mx-auto relative">
+          <div class="grid gap-y-10 md:grid-cols-2 lg:grid-cols-[1.7fr_0.8fr_1fr_1.35fr] lg:gap-x-16 xl:gap-x-24 mb-12 md:mb-24 xl:mb-40">
+            <div>
+              <a class="inline-flex items-center mb-5 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="index.html"><img class="h-8 lg:h-12 w-auto brightness-0" src="/brand/junior-lee-logo.png" alt="Junior Lee" id="site-footer-logo"></a>
+              <p class="text-base lg:text-lg leading-7 lg:leading-8 text-gray-600 max-w-md mb-4 lg:mb-8" id="site-footer-brand-description">Personal and business loan enquiries with clear information and direct assistance throughout the application process.</p>
+            </div>
+            <div>
+              <h3 class="text-base font-bold uppercase tracking-wide text-teal-900 mb-3 lg:mb-5" id="site-footer-quick-links-heading">Quick Links</h3>
+              <ul class="space-y-2 lg:space-y-4 text-base">
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="index.html" id="site-footer-link-home">Home</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html" id="site-footer-link-loan-options">Loan Options</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="how_to_apply.html" id="site-footer-link-how-to-apply">How to Apply</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="about_us.html" id="site-footer-link-about-us">About Us</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="contact.html" id="site-footer-link-contact-us">Contact Us</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-base font-bold uppercase tracking-wide text-teal-900 mb-3 lg:mb-5" id="site-footer-loan-information-heading">Loan Information</h3>
+              <ul class="space-y-2 lg:space-y-4 text-base">
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html#personal-loan" id="site-footer-link-personal-loan">Personal Loan</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html#business-loan" id="site-footer-link-business-loan">Business Loan</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html#required-documents" id="site-footer-link-required-documents">Required Documents</a></li>
+                <li><a class="inline-block text-gray-600 hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="loan.html#interest-rate" id="site-footer-link-interest-repayment">Interest &amp; Repayment</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-base font-bold uppercase tracking-wide text-teal-900 mb-3 lg:mb-5" id="site-footer-contact-heading">Contact</h3>
+              <ul class="space-y-2 lg:space-y-4 text-base leading-7 text-gray-600">
+                <li class="flex flex-wrap items-center gap-x-2 gap-y-1"><span class="font-medium text-teal-900" id="site-footer-phone-label">Phone / WhatsApp:</span> <span class="inline-flex items-center gap-1.5 whitespace-nowrap"><a class="hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="tel:+60102150037" id="site-footer-phone-number">+60 10-215 0037</a><button type="button" class="inline-flex h-6 w-6 items-center justify-center rounded-full border border-gray-200 text-xs text-teal-900 hover:border-lime-500 hover:bg-lime-50 focus:outline-none focus:ring-2 focus:ring-lime-500" data-copy-value="+60 10-215 0037" aria-label="Copy phone number" title="Copy phone number">⧉</button></span></li>
+                <li><span class="font-medium text-teal-900" id="site-footer-email-label">Email:</span> <a class="break-all hover:text-teal-900 focus:outline-none focus:ring-2 focus:ring-lime-500 rounded" href="mailto:metropinjamanberlesan@gmail.com" id="site-footer-email-address">metropinjamanberlesan@gmail.com</a></li>
+                <li><span class="font-medium text-teal-900" id="site-footer-office-label">Office:</span> <span id="site-footer-office-address">Jalan Metro 1, Metro Prima, 52100 Kuala Lumpur, Federal Territory of Kuala Lumpur</span></li>
+                <li><span class="font-medium text-teal-900" id="site-footer-hours-label">Hours:</span> <span id="site-footer-business-hours">Open 24 hours, 7 days a week</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:text-right">
+            <p class="text-base text-gray-500" id="site-footer-copyright">© 2026 Junior Lee. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    <script>
+      function contactBookingForm() {
+          const today = new Date().toISOString().slice(0, 10);
+
+          return {
+              today,
+              loading: false,
+              successMessage: '',
+              errorMessage: '',
+              bookedTimes: [],
+              form: {
+                  name: '',
+                  email: '',
+                  phone: '',
+                  loanType: '',
+                  location: '',
+                  date: today,
+                  time: '',
+                  message: ''
+              },
+              init() {},
+              isBooked(time) {
+                  return this.bookedTimes.includes(time);
+              },
+              timeLabel(time, label) {
+                  return this.isBooked(time) ? `${label} - Booked` : label;
+              },
+              async loadBookedTimes() {
+                  if (!this.form.date) return;
+                  try {
+                      const response = await fetch(`/api/bookings/booked-slots?date=${encodeURIComponent(this.form.date)}`);
+                      if (!response.ok) return;
+                      const data = await response.json();
+                      this.bookedTimes = data.bookedTimes || [];
+                      if (this.isBooked(this.form.time)) {
+                          this.form.time = '';
+                      }
+                  } catch (error) {
+                      this.bookedTimes = [];
+                  }
+              },
+              validate() {
+                  if (!this.form.name.trim()) return 'Please enter your full name.';
+                  if (!this.form.email.trim()) return 'Please enter your email address.';
+                  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.form.email.trim())) return 'Please enter a valid email address.';
+                  if (!/^\+601\d{8,9}$/.test(this.form.phone.trim())) return 'Please enter a valid Malaysian contact number.';
+                  if (!this.form.loanType) return 'Please select a loan type.';
+                  if (!this.form.date || !this.form.time) return 'Please select your preferred date and time.';
+                  if (this.isBooked(this.form.time)) return 'This time slot has already been booked. Please choose another time.';
+                  return '';
+              },
+              async submitBooking() {
+                  if (this.loading) return;
+                  this.successMessage = '';
+                  this.errorMessage = this.validate();
+                  if (this.errorMessage) {
+                      if (window.alfaTrack) {
+                          window.alfaTrack('lead_form_error', {
+                              form_id: 'contact_booking',
+                              form_name: 'Contact appointment booking',
+                              error_type: 'validation',
+                              error_message: this.errorMessage
+                          });
+                      }
+                      return;
+                  }
+
+                  this.loading = true;
+                  try {
+                      const response = await fetch('/api/bookings', {
+                          method: 'POST',
+                          headers: { 'Content-Type': 'application/json' },
+                          body: JSON.stringify(this.form)
+                      });
+                      const data = await response.json().catch(() => ({}));
+
+                      if (response.status === 409) {
+                          this.errorMessage = '';
+                          this.form.time = '';
+                          window.dispatchEvent(new CustomEvent('alfa:booking-slot-unavailable'));
+                          await this.loadBookedTimes();
+                          return;
+                      }
+
+                      if (!response.ok) {
+                          this.errorMessage = data.message || 'This time slot is unavailable. Please choose another time.';
+                          if (window.alfaTrack) {
+                              window.alfaTrack('lead_form_error', {
+                                  form_id: 'contact_booking',
+                                  form_name: 'Contact appointment booking',
+                                  error_type: String(response.status),
+                                  error_message: this.errorMessage
+                              });
+                          }
+                          await this.loadBookedTimes();
+                          return;
+                      }
+
+                      this.successMessage = 'Thank you. Your preferred slot has been submitted.';
+                      this.errorMessage = '';
+                      if (window.alfaTrack) {
+                          window.alfaTrack('lead_form_submit', {
+                              form_id: 'contact_booking',
+                              form_name: 'Contact appointment booking',
+                              booking_id: data.booking?.id || '',
+                              loan_type: this.form.loanType
+                          });
+                      }
+                      this.form.name = '';
+                      this.form.email = '';
+                      this.form.phone = '';
+                      this.form.loanType = '';
+                      this.form.location = '';
+                      this.form.date = '';
+                      this.form.time = '';
+                      this.form.message = '';
+                      window.dispatchEvent(new CustomEvent('alfa:booking-form-reset'));
+                      await this.loadBookedTimes();
+                  } catch (error) {
+                      this.errorMessage = 'Booking service is currently unavailable. Please try again later.';
+                      if (window.alfaTrack) {
+                          window.alfaTrack('lead_form_error', {
+                              form_id: 'contact_booking',
+                              form_name: 'Contact appointment booking',
+                              error_type: 'network',
+                              error_message: this.errorMessage
+                          });
+                      }
+                  } finally {
+                      this.loading = false;
+                  }
+              }
+          };
+      }
+    </script>
+    <script type="text/javascript" src="/js/alfa-tracking.js?v=google-ads-only"></script>
+
+
+  </body>
+</html>
