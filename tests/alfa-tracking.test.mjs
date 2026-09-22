@@ -220,7 +220,7 @@ test('delegated navigation click emits contact_us_click and prints it to the con
   const payload = await readBeaconPayload(beacons.at(-1));
   assert.equal(payload.event, 'contact_us_click');
   assert.equal(payload.click_target_id, 'site-header-nav-contact-us');
-  assert.equal(consoleEvents.at(-1).prefix, '[Junior Lee tracking]');
+  assert.equal(consoleEvents.at(-1).prefix, '[Metro Pinjaman Berlesen tracking]');
   assert.equal(consoleEvents.at(-1).eventName, 'contact_us_click');
 });
 

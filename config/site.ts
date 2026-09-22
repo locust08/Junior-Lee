@@ -1,6 +1,6 @@
 export const siteConfig = {
-  name: 'Junior Lee',
-  shortName: 'Junior Lee',
+  name: 'Metro Pinjaman Berlesen',
+  shortName: 'Metro Pinjaman Berlesen',
   description:
     'Personal and business loan enquiries with clear information and direct assistance throughout the application process.',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://alfapinjaman.pages.dev',
@@ -30,7 +30,7 @@ export const siteConfig = {
   },
   social: {
     whatsapp:
-      'https://wa.me/60102150037?text=Hi%20Junior%20Lee%2C%20I%20would%20like%20to%20enquire%20about%20a%20loan%20appointment.',
+      'https://wa.me/60102150037?text=Hi%20Metro%20Pinjaman%20Berlesen%2C%20I%20would%20like%20to%20enquire%20about%20a%20loan%20appointment.',
   },
   navigation: [
     { label: 'About Us', path: '/about-us' },
@@ -40,7 +40,7 @@ export const siteConfig = {
   ],
 } as const;
 
-const previousBrandNames = ['Alfa Pinjaman', 'Metro Pinjaman Berlesen'] as const;
+const previousBrandNames = ['Alfa Pinjaman', 'Junior Lee'] as const;
 
 export function applySiteName(value: string): string {
   return previousBrandNames.reduce(

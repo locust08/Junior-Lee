@@ -41,7 +41,7 @@ describe('restore Global version endpoint', () => {
     const restoredDoc = {
       _status: 'published',
       footer: {
-        copyrightText: '© 2026 Junior Lee. All rights reserved.  ',
+        copyrightText: '© 2026 Metro Pinjaman Berlesen. All rights reserved.  ',
       },
       id: 30,
     }

@@ -208,7 +208,7 @@ const ContactSectionContact2: React.FC = () => {
                 <div className="max-w-lg py-7">
                   <h1 className="font-heading text-4xl sm:text-6xl tracking-sm mb-6">Contact us</h1>
                   <p className="text-lg text-gray-700 mb-16">
-                    Contact Junior Lee for personal and business loan enquiries. Our team is
+                    Contact Metro Pinjaman Berlesen for personal and business loan enquiries. Our team is
                     ready to assist you 24/7.
                   </p>
                   <form onSubmit={submitBooking}>

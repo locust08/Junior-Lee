@@ -177,14 +177,14 @@ test('site settings logo and copyright fields update only their intended element
   const html = [
     '<img id="site-header-logo" src="logo.png" alt="">',
     '<img id="site-footer-logo" src="logo.png" alt="">',
-    '<p id="site-footer-copyright">© 2026 Junior Lee. All rights reserved.</p>',
+    '<p id="site-footer-copyright">© 2026 Metro Pinjaman Berlesen. All rights reserved.</p>',
     '<img id="home-hero-left-top-image" src="flow-assets/metro/home-hero-adviser.webp" alt="">',
     '<p id="unmapped-copy">Get the funds you need.</p>',
   ].join('');
   const content = structuredClone(defaultPayloadContent);
   content.siteSettings.header.websiteLogo = { src: '/api/media/file/header-logo.png', alt: 'Header logo' };
   content.siteSettings.footer.footerLogo = { src: '/api/media/file/footer-logo.png', alt: 'Footer logo' };
-  content.siteSettings.footer.copyrightText = '© 2026 Junior Lee. All rights reserved.';
+  content.siteSettings.footer.copyrightText = '© 2026 Metro Pinjaman Berlesen. All rights reserved.';
 
   const root = parse(renderLegacyContent(html, 'home', content));
 
@@ -192,7 +192,7 @@ test('site settings logo and copyright fields update only their intended element
   assert.equal(root.querySelector('#site-header-logo').getAttribute('alt'), 'Header logo');
   assert.equal(root.querySelector('#site-footer-logo').getAttribute('src'), '/api/media/file/footer-logo.png');
   assert.equal(root.querySelector('#site-footer-logo').getAttribute('alt'), 'Footer logo');
-  assert.equal(root.querySelector('#site-footer-copyright').text.trim(), '© 2026 Junior Lee. All rights reserved.');
+  assert.equal(root.querySelector('#site-footer-copyright').text.trim(), '© 2026 Metro Pinjaman Berlesen. All rights reserved.');
   assert.equal(root.querySelector('#home-hero-left-top-image').getAttribute('src'), 'flow-assets/metro/home-hero-adviser.webp');
   assert.equal(root.querySelector('#unmapped-copy').text.trim(), 'Get the funds you need.');
 });

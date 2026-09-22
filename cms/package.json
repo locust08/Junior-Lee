@@ -1,7 +1,7 @@
 {
   "name": "metropinjamanberlesen-payload-cms",
   "version": "1.0.0",
-  "description": "Payload CMS for Junior Lee fixed-layout website content",
+  "description": "Payload CMS for Metro Pinjaman Berlesen fixed-layout website content",
   "license": "MIT",
   "type": "module",
   "scripts": {

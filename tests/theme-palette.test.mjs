@@ -26,7 +26,7 @@ function contrastRatio(first, second) {
   return (lighter + 0.05) / (darker + 0.05);
 }
 
-test('Tailwind exposes the Metro-derived Junior Lee colour hierarchy', () => {
+test('Tailwind preserves the Metro Pinjaman Berlesen colour hierarchy', () => {
   const theme = tailwindConfig.presets[0].theme.extend;
   const colors = theme.colors;
   const themeLookup = (path, fallback) =>

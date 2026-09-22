@@ -1,6 +1,6 @@
-# Junior Lee
+# Metro Pinjaman Berlesen
 
-Next.js static export for the Junior Lee website, with Cloudflare Pages Functions for booking APIs.
+Next.js static export for the Metro Pinjaman Berlesen website, with Cloudflare Pages Functions for booking APIs.
 
 ## Development
 

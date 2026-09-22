@@ -51,7 +51,7 @@ test('enables booking emails unless explicitly disabled by environment', () => {
   );
 });
 
-test('calendar invitations use the Junior Lee customer-facing identity', () => {
+test('calendar invitations use the Metro Pinjaman Berlesen customer-facing identity', () => {
   const invite = buildCalendarInvite({
     id: 'booking-1',
     name: 'Customer',
@@ -63,11 +63,11 @@ test('calendar invitations use the Junior Lee customer-facing identity', () => {
     cancelUrl: 'https://example.com/cancel',
   });
 
-  assert.match(invite, /Junior Lee/);
-  assert.match(invite, /ORGANIZER;CN=Junior Lee:mailto:metropinjamanberlesan@gmail\.com/);
+  assert.match(invite, /Metro Pinjaman Berlesen/);
+  assert.match(invite, /ORGANIZER;CN=Metro Pinjaman Berlesen:mailto:metropinjamanberlesan@gmail\.com/);
   assert.match(
     invite,
     /LOCATION:Jalan Metro 1, Metro Prima, 52100 Kuala Lumpur, Federal Territory of Kuala Lumpur/,
   );
-  assert.doesNotMatch(invite, /Alfa Pinjaman|Metro Pinjaman Berlesen/i);
+  assert.doesNotMatch(invite, /Alfa Pinjaman|Junior Lee/i);
 });

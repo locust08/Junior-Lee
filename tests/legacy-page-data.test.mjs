@@ -42,7 +42,7 @@ test('loadLegacyPage renders published Payload home heading into generated HTML'
   assert.doesNotMatch(page.bodyHtml, /Powering Tomorrow|Simple Loans,/);
 });
 
-test('loadLegacyPage presents the Junior Lee brand across localized customer pages', async () => {
+test('loadLegacyPage presents the Metro Pinjaman Berlesen brand across localized customer pages', async () => {
   globalThis.fetch = async () => {
     throw new Error('use the checked-in fallback content');
   };
@@ -51,12 +51,12 @@ test('loadLegacyPage presents the Junior Lee brand across localized customer pag
     const page = await loadLegacyPage('index.html', 'home', locale);
     const renderedPage = `${page.title}\n${page.metaDescription}\n${page.bodyHtml}`;
 
-    assert.match(renderedPage, /Junior Lee/);
-    assert.doesNotMatch(renderedPage, /Alfa Pinjaman|Metro Pinjaman Berlesen/i);
+    assert.match(renderedPage, /Metro Pinjaman Berlesen/);
+    assert.doesNotMatch(renderedPage, /Alfa Pinjaman|Junior Lee/i);
   }
 });
 
-test('every English page exposes descriptive Junior Lee SEO without former brand names', async () => {
+test('every English page exposes descriptive Metro Pinjaman Berlesen SEO without former brand names', async () => {
   globalThis.fetch = async () => {
     throw new Error('use the checked-in fallback content');
   };
@@ -73,9 +73,9 @@ test('every English page exposes descriptive Junior Lee SEO without former brand
     const page = await loadLegacyPage(fileName, pageId, 'en');
     const seoCopy = `${page.title}\n${page.metaDescription}`;
 
-    assert.match(page.title, /Junior Lee/);
+    assert.match(page.title, /Metro Pinjaman Berlesen/);
     assert.ok(page.metaDescription.length >= 70, `${pageId} description is too short`);
-    assert.doesNotMatch(seoCopy, /Alfa Pinjaman|Metro Pinjaman Berlesen/i);
+    assert.doesNotMatch(seoCopy, /Alfa Pinjaman|Junior Lee/i);
   }
 });
 
@@ -99,7 +99,7 @@ test('loadLegacyPage keeps the white logo in the header and uses the dark suppli
   assert.match(page.bodyHtml, /id="site-header-mobile-drawer-primary-logo"/);
 });
 
-test('loadLegacyPage renders the centralized Junior Lee contact details and link destinations', async () => {
+test('loadLegacyPage renders the centralized Metro Pinjaman Berlesen contact details and link destinations', async () => {
   globalThis.fetch = async () => {
     throw new Error('use the checked-in fallback content');
   };

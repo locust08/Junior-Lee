@@ -144,7 +144,7 @@
     window.__alfaRecentEvents[eventKey] = now;
 
     if (window.console && typeof window.console.info === "function") {
-      window.console.info("[Junior Lee tracking]", eventName, payload);
+      window.console.info("[Metro Pinjaman Berlesen tracking]", eventName, payload);
     }
 
     sendVisitorEvent(payload);

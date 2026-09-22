@@ -25,13 +25,13 @@ export const cnTranslations: Record<string, string> = {
   'siteSettings.footer.officeLabel': '办公室：',
   'siteSettings.footer.hoursLabel': '营业时间：',
   'siteSettings.footer.businessHours': '全天24小时，每周7天',
-  'siteSettings.footer.copyrightText': '© 2026 Junior Lee。版权所有。',
+  'siteSettings.footer.copyrightText': '© 2026 Metro Pinjaman Berlesen。版权所有。',
 
   // Home
-  'homePage.seo.title': 'Junior Lee｜马来西亚个人与商业贷款',
-  'homePage.seo.description': 'Junior Lee 为马来西亚客户提供个人及商业贷款咨询、利率信息、6至60个月还款选择和申请支持。',
+  'homePage.seo.title': 'Metro Pinjaman Berlesen｜马来西亚个人与商业贷款',
+  'homePage.seo.description': 'Metro Pinjaman Berlesen 为马来西亚客户提供个人及商业贷款咨询、利率信息、6至60个月还款选择和申请支持。',
   'homePage.hero.mainHeading': '轻松偿还您的债务',
-  'homePage.hero.description': '您的信用卡利息是否超过10%？Junior Lee 为信用卡还款、高利息债务和大额消费提供贷款信息，帮助您选择清晰且易于管理的还款方案。',
+  'homePage.hero.description': '您的信用卡利息是否超过10%？Metro Pinjaman Berlesen 为信用卡还款、高利息债务和大额消费提供贷款信息，帮助您选择清晰且易于管理的还款方案。',
   'homePage.hero.primaryButtonLabel': '立即申请',
   'homePage.hero.secondaryButtonLabel': '查看贷款详情',
   'homePage.howItWorks.heading': '申请流程',
@@ -43,7 +43,7 @@ export const cnTranslations: Record<string, string> = {
   'homePage.howItWorks.steps[2].title': '获批后领取款项',
   'homePage.howItWorks.steps[2].description': '申请获批后，款项将在文件核实和最终确认后发放。',
   'homePage.loanOptions.heading': '贷款选择',
-  'homePage.loanOptions.description': '查看 Junior Lee 提供的个人和商业贷款选择。',
+  'homePage.loanOptions.description': '查看 Metro Pinjaman Berlesen 提供的个人和商业贷款选择。',
   'homePage.loanOptions.cards[0].title': '个人贷款',
   'homePage.loanOptions.cards[0].description': '个人贷款可用于大额开支、债务整合或短期资金需求。',
   'homePage.loanOptions.cards[0].linkLabel': '查看贷款详情',
@@ -63,13 +63,13 @@ export const cnTranslations: Record<string, string> = {
   'homePage.readyToGetStarted.whatsappButtonLabel': 'WhatsApp 联系我们',
 
   // About us
-  'aboutUsPage.seo.title': '关于 Junior Lee｜贷款咨询支持',
-  'aboutUsPage.seo.description': '了解 Junior Lee 如何为马来西亚各地的个人和企业提供贷款咨询支持。',
+  'aboutUsPage.seo.title': '关于 Metro Pinjaman Berlesen｜贷款咨询支持',
+  'aboutUsPage.seo.description': '了解 Metro Pinjaman Berlesen 如何为马来西亚各地的个人和企业提供贷款咨询支持。',
   'aboutUsPage.hero.mainHeading': '为个人与企业贷款咨询提供支持',
   'aboutUsPage.hero.description': '为马来西亚各地的个人和企业提供清晰的贷款信息与申请指导。',
   'aboutUsPage.hero.primaryButtonLabel': '联系我们',
   'aboutUsPage.whoWeAre.heading': '关于我们',
-  'aboutUsPage.whoWeAre.paragraphs[0]': 'Junior Lee 为个人和商业贷款提供咨询支持。我们协助客户了解贷款信息、准备所需文件并完成申请流程。',
+  'aboutUsPage.whoWeAre.paragraphs[0]': 'Metro Pinjaman Berlesen 为个人和商业贷款提供咨询支持。我们协助客户了解贷款信息、准备所需文件并完成申请流程。',
   'aboutUsPage.whoWeAre.highlights[0]': '清晰的贷款信息',
   'aboutUsPage.whoWeAre.highlights[1]': '申请指导',
   'aboutUsPage.whoWeAre.highlights[2]': '个人与商业贷款支持',
@@ -100,10 +100,10 @@ export const cnTranslations: Record<string, string> = {
   'aboutUsPage.readyToGetStarted.whatsappButtonLabel': 'WhatsApp 联系我们',
 
   // Loan
-  'loanPage.seo.title': '个人与商业贷款选择｜Junior Lee',
+  'loanPage.seo.title': '个人与商业贷款选择｜Metro Pinjaman Berlesen',
   'loanPage.seo.description': '比较个人和商业贷款选择、所需文件、参考利率和还款期限。',
   'loanPage.hero.mainHeading': '个人与商业贷款选择',
-  'loanPage.hero.description': '选择个人或商业贷款，查看所需文件，并联系 Junior Lee 获取申请支持。',
+  'loanPage.hero.description': '选择个人或商业贷款，查看所需文件，并联系 Metro Pinjaman Berlesen 获取申请支持。',
   'loanPage.hero.primaryButtonLabel': '联系我们',
   'loanPage.personalLoan.heading': '个人贷款',
   'loanPage.personalLoan.description': '个人贷款适用于大额开支或债务整合，并为有固定收入的人士提供按月还款方案，以满足个人资金需求。',
@@ -167,7 +167,7 @@ export const cnTranslations: Record<string, string> = {
   'loanPage.comparison.rows[3].personalValue': '6–60个月还款期',
   'loanPage.comparison.rows[3].businessValue': '6–60个月还款期',
   'loanPage.interestRates.heading': '利率',
-  'loanPage.interestRates.description': 'Junior Lee 贷款咨询的参考利率范围。',
+  'loanPage.interestRates.description': 'Metro Pinjaman Berlesen 贷款咨询的参考利率范围。',
   'loanPage.interestRates.exampleHeading': '示例',
   'loanPage.interestRates.amountLabel': '借款金额',
   'loanPage.interestRates.exampleDescription': '期限180天。利息：RM448。应还总额：RM5,448。',
@@ -178,7 +178,7 @@ export const cnTranslations: Record<string, string> = {
   'loanPage.interestRates.features[2].description': '个人贷款额 RM500–RM100,000',
 
   // How to apply
-  'howToApplyPage.seo.title': '贷款申请方式｜Junior Lee',
+  'howToApplyPage.seo.title': '贷款申请方式｜Metro Pinjaman Berlesen',
   'howToApplyPage.seo.description': '按照简单步骤提交贷款咨询，并准备所需文件。',
   'howToApplyPage.hero.mainHeading': '简单几步提交贷款咨询',
   'howToApplyPage.hero.description': '选择适合您的贷款并填写申请表，我们的团队将审核申请并联系您说明后续步骤。',
@@ -213,8 +213,8 @@ export const cnTranslations: Record<string, string> = {
   'howToApplyPage.readyToApply.submitButtonLabel': '立即申请',
 
   // Contact
-  'contactUsPage.seo.title': '联系 Junior Lee｜贷款咨询与预约',
-  'contactUsPage.seo.description': '联系 Junior Lee，获取个人与商业贷款信息、申请指导和客户支持。',
+  'contactUsPage.seo.title': '联系 Metro Pinjaman Berlesen｜贷款咨询与预约',
+  'contactUsPage.seo.description': '联系 Metro Pinjaman Berlesen，获取个人与商业贷款信息、申请指导和客户支持。',
   'contactUsPage.contactForm.heading': '联系我们',
   'contactUsPage.contactForm.description': '联系我们以获取个人和商业贷款信息、申请指导及客户支持。咨询渠道全天24小时、每周7天开放。',
   'contactUsPage.contactForm.submitButtonLabel': '立即申请',

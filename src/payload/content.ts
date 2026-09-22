@@ -23,11 +23,11 @@ export const defaultPayloadContent: PublicPayloadContent = {
     "header": {
       "websiteLogo": {
         "src": "/brand/junior-lee-logo.png",
-        "alt": "Junior Lee"
+        "alt": "Metro Pinjaman Berlesen"
       },
       "mobileDrawerLogo": {
         "src": "/brand/junior-lee-logo.png",
-        "alt": "Junior Lee"
+        "alt": "Metro Pinjaman Berlesen"
       },
       "aboutUsMenuLabel": "About Us",
       "loanMenuLabel": "Loan",
@@ -38,7 +38,7 @@ export const defaultPayloadContent: PublicPayloadContent = {
     "footer": {
       "footerLogo": {
         "src": "/brand/junior-lee-logo.png",
-        "alt": "Junior Lee"
+        "alt": "Metro Pinjaman Berlesen"
       },
       "brandDescription": "Personal and business loan enquiries with clear information and direct assistance throughout the application process.",
       "quickLinksColumnHeading": "Quick Links",
@@ -58,7 +58,7 @@ export const defaultPayloadContent: PublicPayloadContent = {
       "officeLabel": "Office:",
       "hoursLabel": "Hours:",
       "businessHours": "Open 24 hours, 7 days a week",
-      "copyrightText": "© 2026 Junior Lee. All rights reserved."
+      "copyrightText": "© 2026 Metro Pinjaman Berlesen. All rights reserved."
     },
     "contactDetails": {
       "supportEmail": siteConfig.contact.email,
@@ -71,13 +71,13 @@ export const defaultPayloadContent: PublicPayloadContent = {
   },
   "homePage": {
     "seo": {
-      "title": "Junior Lee Malaysia | Personal & Business Loan Enquiries",
-      "description": "Explore personal and business loan information in Malaysia, including indicative rates, repayment options and application support from Junior Lee."
+      "title": "Metro Pinjaman Berlesen Malaysia | Personal & Business Loan Enquiries",
+      "description": "Explore personal and business loan information in Malaysia, including indicative rates, repayment options and application support from Metro Pinjaman Berlesen."
     },
     "hero": {
-      "eyebrow": "Junior Lee",
+      "eyebrow": "Metro Pinjaman Berlesen",
       "mainHeading": "Pay Off Your Debts",
-      "description": "Are you paying more than 10% interest on your credit cards? Junior Lee provides loan information for credit card repayment, high interest debt, and major purchase enquiries. A repayment option designed to provide clear and manageable loan information.",
+      "description": "Are you paying more than 10% interest on your credit cards? Metro Pinjaman Berlesen provides loan information for credit card repayment, high interest debt, and major purchase enquiries. A repayment option designed to provide clear and manageable loan information.",
       "primaryButtonLabel": "Apply Now",
       "secondaryButtonLabel": "View Loan Details",
       "leftTopImage": {
@@ -117,7 +117,7 @@ export const defaultPayloadContent: PublicPayloadContent = {
     },
     "loanOptions": {
       "heading": "Loan Options",
-      "description": "Review the personal and business loan options available from Junior Lee.",
+      "description": "Review the personal and business loan options available from Metro Pinjaman Berlesen.",
       "cards": [
         {
           "image": {
@@ -169,8 +169,8 @@ export const defaultPayloadContent: PublicPayloadContent = {
   },
   "aboutUsPage": {
     "seo": {
-      "title": "About Junior Lee | Loan Enquiry Support Malaysia",
-      "description": "Learn how Junior Lee supports personal and business loan enquiries across Malaysia with clear information and application guidance."
+      "title": "About Metro Pinjaman Berlesen | Loan Enquiry Support Malaysia",
+      "description": "Learn how Metro Pinjaman Berlesen supports personal and business loan enquiries across Malaysia with clear information and application guidance."
     },
     "hero": {
       "backgroundImage": {
@@ -188,7 +188,7 @@ export const defaultPayloadContent: PublicPayloadContent = {
       },
       "heading": "Who we are",
       "paragraphs": [
-        "Junior Lee provides enquiry support for personal and business loans. We help customers understand available loan information, prepare the required documents and follow the application process."
+        "Metro Pinjaman Berlesen provides enquiry support for personal and business loans. We help customers understand available loan information, prepare the required documents and follow the application process."
       ],
       "highlights": [
         "Clear loan information",
@@ -271,13 +271,13 @@ export const defaultPayloadContent: PublicPayloadContent = {
   },
   "loanPage": {
     "seo": {
-      "title": "Personal & Business Loan Options | Junior Lee",
-      "description": "Compare personal and business loan information, required documents, indicative rates and repayment periods with Junior Lee."
+      "title": "Personal & Business Loan Options | Metro Pinjaman Berlesen",
+      "description": "Compare personal and business loan information, required documents, indicative rates and repayment periods with Metro Pinjaman Berlesen."
     },
     "hero": {
-      "eyebrow": "Junior Lee",
+      "eyebrow": "Metro Pinjaman Berlesen",
       "mainHeading": "Personal & Business Loan Options",
-      "description": "Choose between personal loan and business loan options, review the required documents, and contact Junior Lee for application support.",
+      "description": "Choose between personal loan and business loan options, review the required documents, and contact Metro Pinjaman Berlesen for application support.",
       "primaryButtonLabel": "Contact Us",
       "image": {
         "src": "flow-assets/metro/loan-hero-adviser.webp",
@@ -342,7 +342,7 @@ export const defaultPayloadContent: PublicPayloadContent = {
             "alt": "Service business owner discussing funding documents"
           },
           "title": "Business funding information",
-          "description": "Junior Lee offers services and solutions for small businesses and corporate groups with financing needs."
+          "description": "Metro Pinjaman Berlesen offers services and solutions for small businesses and corporate groups with financing needs."
         }
       ],
       "requirements": {
@@ -407,7 +407,7 @@ export const defaultPayloadContent: PublicPayloadContent = {
     },
     "interestRates": {
       "heading": "Interest Rate",
-      "description": "Indicative rate range information for Junior Lee loan enquiries.",
+      "description": "Indicative rate range information for Metro Pinjaman Berlesen loan enquiries.",
       "features": [
         {
           "title": "Indicative rate range",
@@ -430,8 +430,8 @@ export const defaultPayloadContent: PublicPayloadContent = {
   },
   "howToApplyPage": {
     "seo": {
-      "title": "How to Apply for a Loan | Junior Lee",
-      "description": "Follow the Junior Lee loan enquiry process, prepare the required documents and select a preferred callback appointment."
+      "title": "How to Apply for a Loan | Metro Pinjaman Berlesen",
+      "description": "Follow the Metro Pinjaman Berlesen loan enquiry process, prepare the required documents and select a preferred callback appointment."
     },
     "hero": {
       "mainHeading": "Submit Your Loan Enquiry in Simple Steps",
@@ -440,7 +440,7 @@ export const defaultPayloadContent: PublicPayloadContent = {
     },
     "steps": {
       "heading": "Step-by-Step Process",
-      "description": "The application process is simple: select your loan, apply, wait for review, and receive the next-step update from Junior Lee.",
+      "description": "The application process is simple: select your loan, apply, wait for review, and receive the next-step update from Metro Pinjaman Berlesen.",
       "items": [
         {
           "title": "Select Your Loan and Apply",
@@ -501,12 +501,12 @@ export const defaultPayloadContent: PublicPayloadContent = {
   },
   "contactUsPage": {
     "seo": {
-      "title": "Contact Junior Lee | Loan Enquiries & Appointments",
-      "description": "Contact Junior Lee for personal and business loan enquiries, application guidance or an appointment in Kuala Lumpur."
+      "title": "Contact Metro Pinjaman Berlesen | Loan Enquiries & Appointments",
+      "description": "Contact Metro Pinjaman Berlesen for personal and business loan enquiries, application guidance or an appointment in Kuala Lumpur."
     },
     "contactForm": {
       "heading": "Contact Us",
-      "description": "Contact Junior Lee for personal and business loan information, application guidance and customer support. Our enquiry channels are available 24 hours, 7 days a week.",
+      "description": "Contact Metro Pinjaman Berlesen for personal and business loan information, application guidance and customer support. Our enquiry channels are available 24 hours, 7 days a week.",
       "submitButtonLabel": "Apply Now",
       "image": {
         "src": "flow-assets/metro/contact-phone-support.webp",
@@ -533,7 +533,7 @@ export const defaultPayloadContent: PublicPayloadContent = {
       "items": [
         {
           "question": "What loan services do you offer?",
-          "answer": "Junior Lee provides information and enquiry support for personal and business loans."
+          "answer": "Metro Pinjaman Berlesen provides information and enquiry support for personal and business loans."
         },
         {
           "question": "How fast can I receive the money?",
@@ -545,7 +545,7 @@ export const defaultPayloadContent: PublicPayloadContent = {
         },
         {
           "question": "Do I need an ATM card or guarantor?",
-          "answer": "No. Junior Lee does not require your ATM card or a guarantor for your loan application."
+          "answer": "No. Metro Pinjaman Berlesen does not require your ATM card or a guarantor for your loan application."
         },
         {
           "question": "What documents are required?",

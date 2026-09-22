@@ -30,14 +30,14 @@ const WHATSAPP_GRAPH_HOST = 'https://graph.facebook.com';
 const DEFAULT_APPOINTMENT_DURATION_MINUTES = 30;
 const RESEND_API_KEY = process.env.RESEND_API_KEY || '';
 const BOOKING_EMAILS_ENABLED = true;
-const RESEND_FROM_EMAIL = process.env.RESEND_FROM_EMAIL_DEV || process.env.RESEND_FROM_EMAIL || process.env.RESEND_FROM_EMAIL_PROD || 'Junior Lee <no-reply@locus-t.com.my>';
+const RESEND_FROM_EMAIL = process.env.RESEND_FROM_EMAIL_DEV || process.env.RESEND_FROM_EMAIL || process.env.RESEND_FROM_EMAIL_PROD || 'Metro Pinjaman Berlesen <no-reply@locus-t.com.my>';
 const RESEND_ADMIN_EMAILS = process.env.RESEND_CONFIRMATION_TO_EMAIL_DEV || process.env.RESEND_TO_EMAIL_DEV || process.env.RESEND_TO_EMAILS || process.env.RESEND_TO_EMAIL || process.env.RESEND_TO_EMAIL_PROD || '';
 const RESEND_ADMIN_CC_EMAILS = process.env.RESEND_CC_EMAIL_DEV || process.env.RESEND_CC_EMAIL || process.env.RESEND_CC_EMAIL_PROD || '';
 const BOOKING_BASE_URL = process.env.BOOKING_BASE_URL || `http://localhost:${PORT}`;
 const OFFICE_ADDRESS = 'Jalan Metro 1, Metro Prima, 52100 Kuala Lumpur, Federal Territory of Kuala Lumpur';
 const OFFICE_PHONE = '+60 10-215 0037';
 const OFFICE_EMAIL = 'metropinjamanberlesan@gmail.com';
-const WHATSAPP_MESSAGE = 'Hi Junior Lee, I would like to enquire about a loan appointment.';
+const WHATSAPP_MESSAGE = 'Hi Metro Pinjaman Berlesen, I would like to enquire about a loan appointment.';
 const WHATSAPP_URL = `https://wa.me/60102150037?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 const WHATSAPP_ACCESS_TOKEN = process.env.WHATSAPP_ACCESS_TOKEN || '';
 const WHATSAPP_PHONE_NUMBER_ID = process.env.WHATSAPP_PHONE_NUMBER_ID || '';
@@ -361,7 +361,7 @@ function buildCalendarInvite(booking, { method = 'REQUEST', status = 'CONFIRMED'
   return [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//Junior Lee//Appointment//EN',
+    'PRODID:-//Metro Pinjaman Berlesen//Appointment//EN',
     `METHOD:${method}`,
     'BEGIN:VEVENT',
     `UID:${booking.id}@metropinjamanberlesan.com`,
@@ -371,9 +371,9 @@ function buildCalendarInvite(booking, { method = 'REQUEST', status = 'CONFIRMED'
     `STATUS:${status}`,
     `SEQUENCE:${sequence}`,
     `SUMMARY:${escapeIcs(`Loan Appointment - ${booking.loanType}`)}`,
-    `DESCRIPTION:${escapeIcs(`Junior Lee appointment. Contact: ${OFFICE_PHONE}. Cancel: ${booking.cancelUrl || ''}`)}`,
+    `DESCRIPTION:${escapeIcs(`Metro Pinjaman Berlesen appointment. Contact: ${OFFICE_PHONE}. Cancel: ${booking.cancelUrl || ''}`)}`,
     `LOCATION:${escapeIcs(OFFICE_ADDRESS)}`,
-    `ORGANIZER;CN=Junior Lee:mailto:${OFFICE_EMAIL}`,
+    `ORGANIZER;CN=Metro Pinjaman Berlesen:mailto:${OFFICE_EMAIL}`,
     `ATTENDEE;CN=${escapeIcs(booking.name)};ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION:mailto:${booking.email}`,
     'END:VEVENT',
     'END:VCALENDAR',
@@ -414,7 +414,7 @@ function buildEmailShell({ title, preheader, reference, body }) {
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:680px;background:#ffffff;border:1px solid #dfe7df;border-radius:12px;overflow:hidden;">
             <tr>
               <td style="padding:26px 30px;border-bottom:1px solid #e5ebe5;background:#ffffff;">
-                <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#0f766e;">Junior Lee</div>
+                <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#0f766e;">Metro Pinjaman Berlesen</div>
                 <div style="font-size:24px;line-height:1.25;font-weight:800;color:#0f172a;margin-top:8px;">${safeTitle}</div>
                 <div style="font-size:13px;color:#64748b;margin-top:8px;">Ref: ${escapeHtml(reference || '-')}</div>
               </td>
@@ -424,7 +424,7 @@ function buildEmailShell({ title, preheader, reference, body }) {
             </tr>
             <tr>
               <td style="padding:20px 30px;background:#f8fafc;border-top:1px solid #e2e8f0;font-size:13px;line-height:1.7;color:#475569;">
-                <strong style="color:#0f172a;">Junior Lee</strong><br>
+                <strong style="color:#0f172a;">Metro Pinjaman Berlesen</strong><br>
                 ${escapeHtml(OFFICE_ADDRESS)}<br>
                 ${escapeHtml(OFFICE_PHONE)} | ${escapeHtml(OFFICE_EMAIL)}
               </td>
@@ -468,7 +468,7 @@ function buildAdminEmail(booking) {
   const reference = bookingReference(booking);
   const preferredSlot = formatAppointmentDate(booking);
   const text = [
-    'New Junior Lee appointment request',
+    'New Metro Pinjaman Berlesen appointment request',
     '',
     `Reference: ${reference}`,
     `Name: ${booking.name}`,
@@ -512,7 +512,7 @@ function buildClientEmail(booking) {
     'Your appointment request has been received. Our team will contact you if any follow-up is needed.',
     `WhatsApp: ${WHATSAPP_URL}`,
     '',
-    'Junior Lee',
+    'Metro Pinjaman Berlesen',
   ].join('\n');
 
   const body = `
@@ -526,11 +526,11 @@ function buildClientEmail(booking) {
     </div>`;
 
   return {
-    subject: 'Your Junior Lee appointment request was received',
+    subject: 'Your Metro Pinjaman Berlesen appointment request was received',
     text,
     html: buildEmailShell({
       title: 'Appointment request received',
-      preheader: 'We have received your Junior Lee appointment request.',
+      preheader: 'We have received your Metro Pinjaman Berlesen appointment request.',
       reference,
       body,
     }),
@@ -653,7 +653,7 @@ async function sendBookingWhatsApp(booking) {
   return sendWhatsAppText({
     to: booking.phone,
     body: [
-      `Hi ${booking.name}, thank you for your Junior Lee appointment request.`,
+      `Hi ${booking.name}, thank you for your Metro Pinjaman Berlesen appointment request.`,
       '',
       `Preferred slot: ${formatAppointmentDate(booking)}`,
       `Loan type: ${booking.loanType}`,
@@ -678,7 +678,7 @@ async function sendConfirmedEmails(booking) {
     `Cancel appointment: ${booking.cancelUrl}`,
     '',
     'A calendar file is attached.',
-    'Junior Lee',
+    'Metro Pinjaman Berlesen',
   ].join('\n');
   const html = buildEmailShell({
     title: 'Appointment confirmed',
@@ -699,10 +699,10 @@ async function sendConfirmedEmails(booking) {
   const [client, admin] = await Promise.all([
     sendResendEmail({
       to: booking.email,
-      subject: 'Your Junior Lee appointment is confirmed',
+      subject: 'Your Metro Pinjaman Berlesen appointment is confirmed',
       text,
       html,
-      attachments: [{ filename: 'junior-lee-appointment.ics', content: Buffer.from(calendarInvite).toString('base64') }],
+      attachments: [{ filename: 'metro-pinjaman-berlesen-appointment.ics', content: Buffer.from(calendarInvite).toString('base64') }],
     }),
     sendResendEmail({
       to: RESEND_ADMIN_EMAILS,
@@ -732,7 +732,7 @@ async function sendCancelledEmails(booking) {
     `Loan Type: ${booking.loanType}`,
     '',
     'A calendar cancellation file is attached so supported calendar apps can remove the event.',
-    'Junior Lee',
+    'Metro Pinjaman Berlesen',
   ].join('\n');
   const html = buildEmailShell({
     title: 'Appointment cancelled',
@@ -752,10 +752,10 @@ async function sendCancelledEmails(booking) {
   const [client, admin] = await Promise.all([
     sendResendEmail({
       to: booking.email,
-      subject: 'Your Junior Lee appointment was cancelled',
+      subject: 'Your Metro Pinjaman Berlesen appointment was cancelled',
       text,
       html,
-      attachments: [{ filename: 'metro-pinjaman-appointment-cancelled.ics', content: Buffer.from(calendarCancel).toString('base64') }],
+      attachments: [{ filename: 'metro-pinjaman-berlesen-appointment-cancelled.ics', content: Buffer.from(calendarCancel).toString('base64') }],
     }),
     sendResendEmail({
       to: RESEND_ADMIN_EMAILS,
@@ -777,7 +777,7 @@ async function sendConfirmedWhatsApp(booking) {
   return sendWhatsAppText({
     to: booking.phone,
     body: [
-      `Hi ${booking.name}, your Junior Lee appointment is confirmed.`,
+      `Hi ${booking.name}, your Metro Pinjaman Berlesen appointment is confirmed.`,
       '',
       `Preferred slot: ${formatAppointmentDate(booking)}`,
       `Loan type: ${booking.loanType}`,

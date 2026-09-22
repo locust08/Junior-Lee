@@ -26,6 +26,17 @@ export default class LocalizedDocument extends Document<LocalizedDocumentProps> 
     return (
       <Html lang={locale === 'bm' ? 'ms' : locale === 'cn' ? 'zh-Hans' : 'en'}>
         <Head>
+          {/* Google Tag Manager */}
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TGL5NW4G');`,
+            }}
+          />
+          {/* End Google Tag Manager */}
           <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10860340363" />
           <script
             dangerouslySetInnerHTML={{
@@ -63,6 +74,16 @@ export default class LocalizedDocument extends Document<LocalizedDocumentProps> 
           <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer />
         </Head>
         <body className="antialiased bg-body text-body font-body">
+          {/* Google Tag Manager (noscript) */}
+          <noscript>
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-TGL5NW4G"
+              height="0"
+              width="0"
+              style={{ display: 'none', visibility: 'hidden' }}
+            />
+          </noscript>
+          {/* End Google Tag Manager (noscript) */}
           <Main />
           <NextScript />
         </body>

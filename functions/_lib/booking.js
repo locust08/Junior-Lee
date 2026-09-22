@@ -135,7 +135,7 @@ export function getConfig(env) {
       !BOOKING_EMAILS_TEMPORARILY_DISABLED
       && cleanValue(env.BOOKING_EMAILS_ENABLED).toLowerCase() !== 'false',
     resendApiKey: env.RESEND_API_KEY || '',
-    resendFromEmail: env.RESEND_FROM_EMAIL_DEV || env.RESEND_FROM_EMAIL || env.RESEND_FROM_EMAIL_PROD || 'Junior Lee <no-reply@locus-t.com.my>',
+    resendFromEmail: env.RESEND_FROM_EMAIL_DEV || env.RESEND_FROM_EMAIL || env.RESEND_FROM_EMAIL_PROD || 'Metro Pinjaman Berlesen <no-reply@locus-t.com.my>',
     resendAdminEmails: env.RESEND_CONFIRMATION_TO_EMAIL_DEV || env.RESEND_TO_EMAIL_DEV || env.RESEND_TO_EMAILS || env.RESEND_TO_EMAIL || env.RESEND_TO_EMAIL_PROD || '',
     resendAdminCcEmails: env.RESEND_CC_EMAIL_DEV || env.RESEND_CC_EMAIL || env.RESEND_CC_EMAIL_PROD || '',
     bookingBaseUrl: env.BOOKING_BASE_URL || 'https://alfapinjaman.pages.dev',
@@ -524,7 +524,7 @@ export function buildCalendarInvite(booking, { method = 'REQUEST', status = 'CON
   return [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//Junior Lee//Appointment//EN',
+    'PRODID:-//Metro Pinjaman Berlesen//Appointment//EN',
     `METHOD:${method}`,
     'BEGIN:VEVENT',
     `UID:${booking.id}@metropinjamanberlesan.com`,
@@ -534,9 +534,9 @@ export function buildCalendarInvite(booking, { method = 'REQUEST', status = 'CON
     `STATUS:${status}`,
     `SEQUENCE:${sequence}`,
     `SUMMARY:${escapeIcs(`Loan Appointment - ${booking.loanType}`)}`,
-    `DESCRIPTION:${escapeIcs(`Junior Lee appointment. Cancel: ${booking.cancelUrl}`)}`,
+    `DESCRIPTION:${escapeIcs(`Metro Pinjaman Berlesen appointment. Cancel: ${booking.cancelUrl}`)}`,
     `LOCATION:${OFFICE_ADDRESS}`,
-    `ORGANIZER;CN=Junior Lee:mailto:${OFFICE_EMAIL}`,
+    `ORGANIZER;CN=Metro Pinjaman Berlesen:mailto:${OFFICE_EMAIL}`,
     `ATTENDEE;CN=${escapeIcs(booking.name)};ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION:mailto:${booking.email}`,
     'END:VEVENT',
     'END:VCALENDAR',
@@ -559,7 +559,7 @@ function base64Content(value) {
 const OFFICE_ADDRESS = 'Jalan Metro 1, Metro Prima, 52100 Kuala Lumpur, Federal Territory of Kuala Lumpur';
 const OFFICE_PHONE = '+60 10-215 0037';
 const OFFICE_EMAIL = 'metropinjamanberlesan@gmail.com';
-const WHATSAPP_MESSAGE = 'Hi Junior Lee, I would like to enquire about a loan appointment.';
+const WHATSAPP_MESSAGE = 'Hi Metro Pinjaman Berlesen, I would like to enquire about a loan appointment.';
 const WHATSAPP_URL = `https://wa.me/60102150037?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 const GOOGLE_MAPS_URL = 'https://www.google.com/maps/place/Jalan+Metro+1,+Metro+Prima,+52100+Kuala+Lumpur,+Wilayah+Persekutuan+Kuala+Lumpur/data=!4m2!3m1!1s0x31cc46401fe7d16b:0xcbf18c7859da390b';
 
@@ -593,7 +593,7 @@ function emailShell({ title, preheader, reference, body }) {
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:680px;background:#ffffff;border:1px solid #dfe7df;border-radius:12px;overflow:hidden;">
             <tr>
               <td style="padding:26px 30px;border-bottom:1px solid #e5ebe5;background:#ffffff;">
-                <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#0f766e;">Junior Lee</div>
+                <div style="font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#0f766e;">Metro Pinjaman Berlesen</div>
                 <div style="font-size:24px;line-height:1.25;font-weight:800;color:#0f172a;margin-top:8px;">${safeTitle}</div>
                 <div style="font-size:13px;color:#64748b;margin-top:8px;">Ref: ${escapeHtml(reference || '-')}</div>
               </td>
@@ -603,7 +603,7 @@ function emailShell({ title, preheader, reference, body }) {
             </tr>
             <tr>
               <td style="padding:20px 30px;background:#f8fafc;border-top:1px solid #e2e8f0;font-size:13px;line-height:1.7;color:#475569;">
-                <strong style="color:#0f172a;">Junior Lee</strong><br>
+                <strong style="color:#0f172a;">Metro Pinjaman Berlesen</strong><br>
                 ${escapeHtml(OFFICE_ADDRESS)}<br>
                 ${escapeHtml(OFFICE_PHONE)} | ${escapeHtml(OFFICE_EMAIL)}
               </td>
@@ -681,7 +681,7 @@ export async function sendBookingEmails(config, booking) {
   const reference = bookingReference(booking);
   const preferredSlot = formatAppointmentDate(booking);
   const adminText = [
-    'New Junior Lee appointment request',
+    'New Metro Pinjaman Berlesen appointment request',
     '',
     `Reference: ${reference}`,
     `Name: ${booking.name}`,
@@ -702,7 +702,7 @@ export async function sendBookingEmails(config, booking) {
     'Your appointment request has been received. Our team will contact you if any follow-up is needed.',
     `WhatsApp: ${WHATSAPP_URL}`,
     '',
-    'Junior Lee',
+    'Metro Pinjaman Berlesen',
   ].join('\n');
   const adminHtml = emailShell({
     title: 'New appointment booking',
@@ -718,7 +718,7 @@ export async function sendBookingEmails(config, booking) {
   });
   const clientHtml = emailShell({
     title: 'Appointment request received',
-    preheader: 'We have received your Junior Lee appointment request.',
+    preheader: 'We have received your Metro Pinjaman Berlesen appointment request.',
     reference,
     body: `
       <p style="margin:0 0 16px;font-size:16px;color:#0f172a;font-weight:700;">Hi ${escapeHtml(booking.name)},</p>
@@ -741,7 +741,7 @@ export async function sendBookingEmails(config, booking) {
     }),
     sendResendEmail(config, {
       to: booking.email,
-      subject: 'Your Junior Lee appointment request was received',
+      subject: 'Your Metro Pinjaman Berlesen appointment request was received',
       text: clientText,
       html: clientHtml,
     }),
@@ -796,7 +796,7 @@ export async function sendWhatsAppText(config, { to, body }) {
 
 export async function sendBookingWhatsApp(config, booking) {
   const body = [
-    `Hi ${booking.name}, thank you for your Junior Lee appointment request.`,
+    `Hi ${booking.name}, thank you for your Metro Pinjaman Berlesen appointment request.`,
     '',
     `Preferred slot: ${formatAppointmentDate(booking)}`,
     `Loan type: ${booking.loanType}`,
@@ -822,7 +822,7 @@ export async function sendConfirmedEmails(config, booking) {
     `Cancel appointment: ${booking.cancelUrl}`,
     '',
     'A calendar file is attached.',
-    'Junior Lee',
+    'Metro Pinjaman Berlesen',
   ].join('\n');
   const html = emailShell({
     title: 'Appointment confirmed',
@@ -843,10 +843,10 @@ export async function sendConfirmedEmails(config, booking) {
   const [client, admin] = await Promise.all([
     sendResendEmail(config, {
       to: booking.email,
-      subject: 'Your Junior Lee appointment is confirmed',
+      subject: 'Your Metro Pinjaman Berlesen appointment is confirmed',
       text,
       html,
-      attachments: [{ filename: 'junior-lee-appointment.ics', content: base64Content(calendarInvite) }],
+      attachments: [{ filename: 'metro-pinjaman-berlesen-appointment.ics', content: base64Content(calendarInvite) }],
     }),
     sendResendEmail(config, {
       to: config.resendAdminEmails,
@@ -873,7 +873,7 @@ export async function sendCancelledEmails(config, booking) {
     `Loan Type: ${booking.loanType}`,
     '',
     'A calendar cancellation file is attached so supported calendar apps can remove the event.',
-    'Junior Lee',
+    'Metro Pinjaman Berlesen',
   ].join('\n');
   const html = emailShell({
     title: 'Appointment cancelled',
@@ -893,10 +893,10 @@ export async function sendCancelledEmails(config, booking) {
   const [client, admin] = await Promise.all([
     sendResendEmail(config, {
       to: booking.email,
-      subject: 'Your Junior Lee appointment was cancelled',
+      subject: 'Your Metro Pinjaman Berlesen appointment was cancelled',
       text,
       html,
-      attachments: [{ filename: 'junior-lee-appointment-cancelled.ics', content: base64Content(calendarCancel) }],
+      attachments: [{ filename: 'metro-pinjaman-berlesen-appointment-cancelled.ics', content: base64Content(calendarCancel) }],
     }),
     sendResendEmail(config, {
       to: config.resendAdminEmails,
@@ -913,7 +913,7 @@ export async function sendCancelledEmails(config, booking) {
 
 export async function sendConfirmedWhatsApp(config, booking) {
   const body = [
-    `Hi ${booking.name}, your Junior Lee appointment is confirmed.`,
+    `Hi ${booking.name}, your Metro Pinjaman Berlesen appointment is confirmed.`,
     '',
     `Preferred slot: ${formatAppointmentDate(booking)}`,
     `Loan type: ${booking.loanType}`,
