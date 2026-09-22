@@ -48,6 +48,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               `,
             }}
           />
+          <script
+            src="https://www.bugherd.com/sidebarv2.js?apikey=ctqytgzjkfwsthje8nqgca"
+            async
+          />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
           <link
             rel="stylesheet"
