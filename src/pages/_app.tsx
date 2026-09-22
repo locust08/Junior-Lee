@@ -14,25 +14,53 @@ declare global {
 
 export default function App({ Component, pageProps }: AppProps) {
     useEffect(() => {
-        const projectToken = process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN;
-        const apiHost = process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com';
+        let cancelled = false;
 
-        if (!projectToken || posthog.__loaded) {
-            return;
+        async function initializePostHog() {
+            let projectToken = process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN;
+            let apiHost = process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com';
+
+            if (!projectToken) {
+                try {
+                    const response = await fetch('/api/posthog-config');
+                    if (!response.ok) return;
+
+                    const config = await response.json() as {
+                        projectToken?: string;
+                        host?: string;
+                    };
+                    projectToken = config.projectToken;
+                    apiHost = config.host || apiHost;
+                } catch {
+                    return;
+                }
+            }
+
+            if (cancelled || !projectToken) return;
+
+            if (!posthog.__loaded) {
+                posthog.init(projectToken, {
+                    api_host: apiHost,
+                    capture_pageview: false,
+                    capture_pageleave: true,
+                    autocapture: false,
+                    disable_session_recording: true,
+                    capture_exceptions: true,
+                    person_profiles: 'identified_only',
+                    loaded: () => {
+                        console.info(`[${siteConfig.name} tracking] PostHog initialized`);
+                    },
+                });
+            }
+
+            window.posthog = posthog;
         }
 
-        posthog.init(projectToken, {
-            api_host: apiHost,
-            capture_pageview: false,
-            capture_pageleave: true,
-            autocapture: false,
-            disable_session_recording: true,
-            person_profiles: 'identified_only',
-            loaded: () => {
-                console.info(`[${siteConfig.name} tracking] PostHog initialized`);
-            },
-        });
-        window.posthog = posthog;
+        void initializePostHog();
+
+        return () => {
+            cancelled = true;
+        };
     }, []);
 
     return (
