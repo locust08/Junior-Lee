@@ -4,6 +4,7 @@ import '../styles/globals.css'
 import '../styles/main.css';
 import type { AppProps } from 'next/app'
 import { siteConfig } from '@/config/site';
+import WhatsAppLeadFormLoader from '@/src/components/lead/WhatsAppLeadFormLoader';
 
 declare global {
     interface Window {
@@ -34,5 +35,10 @@ export default function App({ Component, pageProps }: AppProps) {
         window.posthog = posthog;
     }, []);
 
-    return <Component {...pageProps} />
+    return (
+        <>
+            <Component {...pageProps} />
+            <WhatsAppLeadFormLoader />
+        </>
+    )
 }
