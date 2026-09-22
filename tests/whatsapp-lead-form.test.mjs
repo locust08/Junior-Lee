@@ -26,6 +26,7 @@ test('the global WhatsApp lead form preserves its capture and handoff contract',
   assert.ok(configMatch, 'the form runtime configuration should be embedded');
 
   const config = JSON.parse(configMatch[1]);
+  assert.equal(config.id, '443b4bd3-bf3a-4244-9e88-5735c2fba5f6');
   assert.equal(config.endpoint, 'https://website-lead-routes.easondev.workers.dev/v1/html-leads');
   assert.equal(config.route, '01de841d-dbe8-4179-b51f-a12987517398');
   assert.equal(config.turnstile, true);

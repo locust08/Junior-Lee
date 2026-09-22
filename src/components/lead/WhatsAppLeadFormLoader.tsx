@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 const FORM_ASSET_URL = '/forms/whatsapp-lead-form.html';
-const FORM_INSTANCE_SELECTOR = '[data-lr-initialized="1d2c4cde-b38f-4d54-b6c0-4ab84f73f782"]';
+const FORM_INSTANCE_SELECTOR = '[data-lr-initialized="443b4bd3-bf3a-4244-9e88-5735c2fba5f6"]';
 
 export default function WhatsAppLeadFormLoader() {
   useEffect(() => {
